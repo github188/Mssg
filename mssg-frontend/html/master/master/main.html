@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="../../css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+		<link href="../../css/autoSelect.css" rel="stylesheet" type="text/css">
+		<link href="../../css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+		<link href="../../fonts/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../../fonts/iconfont.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css" type="text/css">
+		<link rel="stylesheet" href="../../css/zTreeStyle/zTreeStyle.css" type="text/css">
+		<link rel="stylesheet" href="../../css/zTreeStyle/ztree-skin.css" type="text/css">
+		<!--<link href="../../css/style.min.css" rel="stylesheet" type="text/css">-->
+		<link href="../../css/theme.css" rel="stylesheet" type="text/css">
+		<script src="../../js/lib/require.js"></script>
+		<script src="../../js/lib/config.js"></script>
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="../../css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lte IE 6]>
+	      <link rel="stylesheet"ac type="text/css" href="../../css/bootstrap-ie6-min.css">
+	      <![endif]-->
+		<!--[if lte IE 7]>
+	      <link rel="stylesheet" type="text/css" href="../../css/ie.css">
+	      <![endif]-->
+		<!--[if lt IE 9]>
+	        <script src="../../js/lib/html5shiv.min.js"></script>
+	        <script src="../../js/lib/respond.min.js"></script>
+	    <![endif]-->
+		<!--[if lte IE 6]>
+	        <script type="text/javascript" src="../../js/lib/bootstrap-ie.js"></script>
+	    <![endif]-->
+		<!--[if IE]>  
+	        <script type="text/javascript" src="../../js/lib/excanvas.compiled.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<div class="page-container">
+			<!--左侧导航栏-->
+			<div class="page-menubar">
+				<div class="img-center box-bottom-shadow">
+					<img src="../../images/logo.png" alt="logo" />
+				</div>
+				<div class="panel-group" id="menu-list" project="master" role="tablist" aria-multiselectable="false"></div>
+
+			</div>
+			<!--头部-->
+			<div class="page-header">
+				<img src="../../images/title.png" alt="" />
+				<div class="pull-right page-navbar">
+					<ul>
+						<li>
+							<i class="fa fa-search pull-left"></i>
+							<input type="text" class="form-control" placeholder="请输入数据或文件" />
+						</li>
+						<li><a href="#"><span class="iconfont icon-lingdang1 font-bold"></span></a></li>
+						<li><a href="#"><span class="iconfont icon-wenhao"></span></a></li>
+						<li><a href="#"><span class="iconfont icon-renyuan"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--位置详情-->
+			<div class="page-location">
+				<i class="fa fa-map-marker"></i>
+				<span class="location-info"></span>
+			</div>
+			<!--内容部分-->
+			<div class="page-content"></div>
+			<!--底部-->
+			<div class="page-footer text-center">
+				Copyright © 2012-2016 江苏飞搏软件股份有限公司 京ICP备12050607号
+			</div>
+		</div>
+		<script id="menu-template" type="text/x-handlebars-template">
+		{{#each this}}
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading-{{@index}}">
+					<h4 class="panel-title">
+			            <a role="button" data-toggle="collapse" data-parent="#menu-list" href="#collapse-{{@index}}" aria-expanded="false" aria-controls="collapse-{{@index}}" class="collapsed" attr="{{@index}}">
+			            	<i class="title-icon fa {{icon}}"></i>
+		            		 {{label}}
+		            		<i class="fa icon-right fa-angle-down"></i>
+			            </a>
+	        		</h4>
+				</div>
+				<div id="collapse-{{@index}}" class="panel-collapse collapse {{#if active}}in{{/if}}" role="tabpanel" aria-labelledby="heading-{{@index}}" aria-expanded="false">
+					<div class="panel-body">
+						<ul class="child-menu-list">
+							{{#each items}}
+								<li id="{{id}}" class="{{#if active}}active{{/if}}" url="{{url}}" isIframe="{{isIframe}}" parentName="{{../label}}" selfName="{{label}}">{{label}}</li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>
+		{{/each}}	
+			
+		</script>
+		<script>
+			require(["app/mainApp"], function(app) {
+				app.run();
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,120 @@
+<div class="content-padding-box">
+	<!--<ul id="stateTabs" class="nav nav-tabs state-nab">
+		<li class="active">
+			<a href="#tabContent-1" id="tab-1" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="true">实时</a>
+		</li>
+		<li class="">
+			<a href="#tabContent-2" id="tab-2" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="false">历史</a>
+		</li>
+	</ul>-->
+	<div id="stateTabContent" class="tab-content" style="top:20px">
+		<!--<div role="tabpanel" class="tab-pane fade active in" style="border:1px solid #e0e0e9;" id="tabContent-1" aria-labelledby="tabContent-1">
+			<div class="form-horizontal form-box clearfix">
+				<div class="row-fluid">
+					<div class="col-md-10">
+						<div class="col-md-8">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">发生时间</label>
+								<div class="col-sm-10">
+									<div class="datetimepicker-box">
+										<input class="form-control date form_datetime" id="beginTime_1" size="16" type="text" value="">
+										<span class="add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+									-
+									<div class="datetimepicker-box">
+										<input class="form-control date form_datetime" id="endTime_1" size="16" type="text" value="">
+										<span class="add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">访问单位</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="visitedUnit">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 text-center">
+						<button class="btn btn-primary btn-search" id="constantQuery">查询</button>
+					</div>
+				</div>
+			</div>-->
+			<!--<ul class="list-header">-->
+				<!--<li>-->
+					<!--<span>发生时间</span>-->
+					<!--<span>访问设备</span>-->
+					<!--<span>访问单位</span>-->
+					<!--<span>访问类型</span>-->
+					<!--<span>访问用户</span>-->
+				<!--</li>-->
+			<!--</ul>-->
+			<!--<div class="resource-list log-list" id="constant-list">-->
+				<!--<ul class="list-body" isScroll=false>-->
+
+				<!--</ul>-->
+			<!--</div>-->
+			<!--<div class="table-container">
+				<table class="table table-primary table-bordered table-striped text-center" id="constant-list"></table>
+			</div>
+		</div>-->
+		<div id="tabContent-2" style="position:relative;">
+			<div class="form-horizontal form-box clearfix">
+				<div class="row-fluid">
+					<div class="col-md-10">
+						<div class="col-md-8">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">发生时间</label>
+								<div class="col-sm-10">
+									<div class="datetimepicker-box">
+										<input class="form-control date form_datetime" id="beginTime" size="16" type="text" value="">
+										<span class="add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+									-
+									<div class="datetimepicker-box">
+										<input class="form-control date form_datetime" id="endTime" size="16" type="text" value="">
+										<span class="add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">访问单位</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="visitedUnit">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 text-center">
+						<button class="btn btn-primary btn-search" id="historyQuery">查询</button>
+					</div>
+				</div>
+			</div>
+			<div class="table-container">
+				<table class="table table-primary table-bordered table-striped text-center" id="history-list"></table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script id="log-list-template" type="text/x-handlebars-template">
+	{{#each this}}
+		<li>
+			<span>{{startTime}}</span>
+			<span>{{deviceID}}</span>
+			<span>{{companyID}}</span>
+			<span>{{visitType}}</span>
+			<span>{{visitUser}}</span>
+		</li>
+	{{/each}}	
+</script>
+<script>
+	require(["app/logAudit/businessAuditApp"], function(app) {
+		app.run();
+	});
+</script>

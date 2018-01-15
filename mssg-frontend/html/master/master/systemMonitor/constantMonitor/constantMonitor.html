@@ -1,0 +1,143 @@
+<div class="content-padding-box" project="master" style="padding:15px 5px">
+    <div class="row-fluid blocks-box clearfix" style="margin-bottom:10px">
+        <!--共享资源-->
+        <div class="col-md-3">
+            <div class="num-box clearfix">
+                <div class="left-con">
+                    <span class="iconfont icon-ziyuangongxiang1"></span>
+                </div>
+                <div class="right-con">
+                    <div class="row-fluid num-css text-center">
+                        <span class="num">500<small>个</small></span>
+                        <br/>
+                        <span class="title">共享资源</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--订阅次数-->
+        <div class="col-md-3">
+            <div class="num-box clearfix">
+                <div class="left-con">
+                    <span class="iconfont icon-iconfontzhizuobiaozhun023108"></span>
+                </div>
+                <div class="right-con">
+                    <div class="row-fluid num-css text-center">
+                        <span class="num">300<small>次</small></span>
+                        <br/>
+                        <span class="title">订阅次数</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--实时视频播放-->
+        <div class="col-md-3">
+            <div class="num-box clearfix">
+                <div class="left-con">
+                    <span class="iconfont icon-map_shishishipin"></span>
+                </div>
+                <div class="right-con">
+                    <div class="row-fluid num-css text-center">
+                        <span class="num">20,000<small>次</small></span>
+                        <br/>
+                        <span class="title">实时视频播放</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--历史视频播放-->
+        <div class="col-md-3">
+            <div class="num-box clearfix">
+                <div class="left-con">
+                    <span class="iconfont icon-huifulishishipin"></span>
+                </div>
+                <div class="right-con">
+                    <div class="row-fluid num-css text-center">
+                        <span class="num">5,000<small>次</small></span>
+                        <br/>
+                        <span class="title">历史视频播放</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--热门资源排名top10-->
+    <div class="row-fluid clearfix" id="tables">
+        <div class="col-md-6">
+            <div class="table-pane">
+                <div class="pane-header">
+                    <span>实时流量</span>
+                </div>
+                <div class="pane-body tab-content" style="border:1px solid #ddd;margin:-1px 0px 15px 0px">
+                    <div class="" id="constant-flow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" style="padding-left: 7px;">
+            <div class="table-pane">
+                <div class="pane-header">
+                    <span>资源订阅单位 TOP5</span>
+                </div>
+                <div class="pane-body tab-content" style="border:1px solid #ddd;margin:-1px 0px 15px 0px">
+                    <div class="" id="order-num"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="table-pane">
+                <div class="pane-header">
+                    <span>热门资源排名 TOP5</span>
+                    <div class="pull-right">
+                       <ul class="nav time-change-tab">
+                           <li class="active">
+                               <a href="#resTabContent-1" id="resTab-1" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="true">今日</a>
+                           </li>
+                           <li class="">
+                               <a href="#resTabContent-2" id="resTab-2" role="tab" data-toggle="tab" aria-controls="tabContent-2" aria-expanded="false">本周</a>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="pane-body tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="resTabContent-1" aria-labelledby="tabContent-1">
+                        <table class="table table-primary table-bordered table-striped text-center table-condensed hot-resource"></table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="resTabContent-2" aria-labelledby="tabContent-2">
+                        <table class="table table-primary table-bordered table-striped text-center table-condensed hot-resource"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--用户观看排名-->
+        <div class="col-md-6" style="padding-left: 7px;">
+            <div class="table-pane">
+                <div class="pane-header">
+                    <span>用户观看排名</span>
+                    <div class="pull-right">
+                       <ul class="nav time-change-tab">
+                           <li class="active">
+                               <a href="#tabContent-1" id="tab-1" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="true">今日</a>
+                           </li>
+                           <li class="">
+                               <a href="#tabContent-2" id="tab-2" role="tab" data-toggle="tab" aria-controls="tabContent-2" aria-expanded="false">本周</a>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="pane-body tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tabContent-1" aria-labelledby="tabContent-1">
+                        <table class="table table-primary table-bordered table-striped text-center table-condensed user-view-table"></table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tabContent-2" aria-labelledby="tabContent-2">
+                        <table class="table table-primary table-bordered table-striped text-center table-condensed user-view-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    require(["app/systemMonitor/systemMonitorApp"],function(app){
+        app.run();
+    });
+</script>

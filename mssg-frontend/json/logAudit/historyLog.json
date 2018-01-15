@@ -1,0 +1,35 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": {
+		"recordsTotal": "3",
+		"recordsFiltered": "3",
+		"data": [
+			{
+				"companyID": "3125421",
+				"deviceID": "5421521",
+				"visitType": "2",
+				"startTime": "1505357134000",
+				"visitUser": "241252",
+				"segmentTime": null
+			},
+			{
+				"companyID": "4214215421",
+				"deviceID": "12312542",
+				"visitType": "2",
+				"startTime": "1505357121000",
+				"visitUser": "e23e14321",
+				"segmentTime": null
+			},
+			{
+				"companyID": "214521521521512",
+				"deviceID": "1111111",
+				"visitType": "2",
+				"startTime": "1505357104000",
+				"visitUser": "112314321",
+				"segmentTime": null
+			}
+		]
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"name": "车辆卡口",
+			"children": [
+			]
+		},
+		{
+			"id": "2",
+			"name": "人员卡口",
+			"children": [
+			]
+		},
+		{
+			"id": "3",
+			"name": "微卡口",
+			"children": [
+			]
+		},
+		{
+			"id": "4",
+			"name": "特征摄像机",
+			"children": [
+			]
+		},
+		{
+			"id": "5",
+			"name": "普通监控",
+			"children": [
+			]
+		},
+		{
+			"id": "6",
+			"name": "高空瞭望摄像机",
+			"children": [
+			]
+		},
+		{
+			"id": "99",
+			"name": "其他",
+			"children": [
+			]
+		}
+	]
+}

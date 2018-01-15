@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.fable.framework.proxy.sip.config.CommonConfiguration,\
+com.fable.framework.proxy.sip.config.SipProxyConfiguration,\
+com.fable.framework.proxy.sip.config.MediaConfiguration

@@ -1,0 +1,12 @@
+[
+	{"label":"资源管理","id":"1","pid":"root","icon":"fa fa-database"},
+	{"label":"订阅资源","id":"1-3","pid":"1","url":"resourceManage/resourceSubscribe/resourceSubscribe.html"},
+	{"label":"媒体源管理","id":"1-4","pid":"1","url":"resourceManage/streamingMediaManage/streamingMedia.html"},
+	{"label":"视频监控","id":"6","pid":"root","icon":"fa fa-television"},
+	{"label":"实时","id":"6-1","pid":"6","isIframe":"1","url":"videoClient/constantClient.html"},
+	{"label":"历史","id":"6-1","pid":"6","isIframe":"1","url":"videoClient/historyClient.html"},
+	{"label":"系统管理","id":"2","pid":"root","icon":"fa fa-cog"},
+	{"label":"用户管理","id":"2-1","pid":"2","url":"systemManage/userManage/userManage.html"},
+	{"label":"系统监控","id":"3","pid":"root","icon":"fa fa-sitemap"},
+	{"label":"实时监控","id":"3-1","pid":"3","url":"systemMonitor/constantMonitor/constantMonitor.html"}
+]

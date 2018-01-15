@@ -1,0 +1,134 @@
+<div class="content-padding-box">
+	<div class="forms-box">
+		<!--设备-->
+		<div class="row-fluid title-upper-box clearfix">
+			<div class="box-header">
+				<span>设备</span>
+			</div>
+			<div class="box-body">
+				<div class="row-fluid">
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">设备认证：</label>
+						<select class="form-control">
+							<option>开启</option>
+							<option>关闭</option>
+						</select>
+					</div>
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">设备认证方式：</label>
+						<select class="form-control">
+							<option>数字摘要</option>
+							<option>数字证书</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--加密-->
+		<div class="row-fluid title-upper-box clearfix">
+			<div class="box-header">
+				<span>加密</span>
+			</div>
+			<div class="box-body">
+				<div class="row-fluid">
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">传输加密：</label>
+						<select class="form-control">
+							<option>开启</option>
+							<option>关闭</option>
+						</select>
+					</div>
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">传输加密方式：</label>
+						<select class="form-control">
+							<option>DES</option>
+							<option>3DES</option>
+							<option>AES(128)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--格式-->
+		<div class="row-fluid title-upper-box clearfix">
+			<div class="box-header">
+				<span>格式</span>
+			</div>
+			<div class="box-body">
+				<div class="row-fluid">
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">信令格式校验：</label>
+						<select class="form-control">
+							<option>开启</option>
+							<option>关闭</option>
+						</select>
+					</div>
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">媒体格式验证：</label>
+						<select class="form-control">
+							<option>开启</option>
+							<option>关闭</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--客户端-->
+		<div class="row-fluid title-upper-box clearfix">
+			<div class="box-header">
+				<span>客户端</span>
+			</div>
+			<div class="box-body">
+				<div class="row-fluid">
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">客户端认证：</label>
+						<select class="form-control">
+							<option>开启</option>
+							<option>关闭</option>
+						</select>
+					</div>
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">客户端认证方式：</label>
+						<select class="form-control">
+							<option>数字摘要</option>
+							<option>数字证书</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--其他-->
+		<div class="row-fluid title-upper-box clearfix">
+			<div class="box-header">
+				<span>其他</span>
+			</div>
+			<div class="box-body">
+				<div class="row-fluid">
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">用户认证：</label>
+						<select class="form-control">
+							<option>数字摘要</option>
+							<option>数字证书</option>
+						</select>
+					</div>
+					<div class="col-md-6 form-inline">
+						<label for="device-certifi">数据完整性验证：</label>
+						<select class="form-control">
+							<option>启动</option>
+							<option>关闭</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--保存按钮-->
+		<div class="row-fluid text-right">
+			<button class="btn btn-primary">保存</button>
+		</div>
+	</div>
+</div>
+<script>
+	require(["app/logAudit/safeSettingApp"], function(app) {
+		app.run();
+	});
+</script>

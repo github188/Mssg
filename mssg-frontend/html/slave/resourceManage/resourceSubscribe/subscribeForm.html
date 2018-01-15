@@ -1,0 +1,178 @@
+<div class="row-fluid clearfix">
+	<ul class="step-list clearfix">
+		<li class="active">
+			<span>选择权限</span>
+			<div class="wrap">
+				<div class="circle-box">1</div>
+			</div>
+		</li>
+		<li>
+			<span>填写申请</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">2</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="row-fluid clearfix">
+	<div class="panes-content">
+		<div class="pane-box" id="content-1">
+			<!--<div class="tables-box">-->
+				<!--<table class="table table-primary" id="table-auth"></table>-->
+			<!--</div>-->
+			<div class="col-md-4">
+				<div class="ztree" id="resouceTreeCheck"></div>
+			</div>
+			<form id="form" class="col-md-8" style="border-left:1px solid #aaa">
+				<div class="row-fluid auth-box clearfix">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">实时（观看）</label>
+							<div class="col-sm-9">
+								<div style="position: absolute;width:100%;max-width: 416px">
+									<input  name="realDays" class="tempValue form-control"  val="1"  style="border:1px solid #fff;visibility:hidden" role="{required:true}" value="1">
+								</div>
+								<select class='form-control' name='realView' id="realView" style="background:rgba(0,0,0,0);position:relative;z-index:99" >
+									<option value='1'>一天</option>
+									<option value='2'>最近一周</option>
+									<option value='3'>一个月</option>
+									<option value='0'>任意时间</option>
+									<option id="dateOption">时间段</option>
+								</select>
+								<input type="text" id="date" style="position: absolute;height: 1px;border:1px solid #fff">
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">实时（操作）</label>
+							<div class="col-sm-8">
+								<div class="form-group">
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option1" name="realControl">控制
+								    </label>
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option2" name="record">录像
+								    </label>
+								    <label class="checkbox-inline">
+								    <input type="checkbox"  value="option3" name="realSnap">截图
+								    </label>
+								</div>
+							</div>
+							<!--<span class="asterisk"></span>-->
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">历史（观看）</label>
+							<div class="col-sm-9">
+								<div style="position: absolute;width:100%;max-width: 416px">
+									<input  name="histDays" class="tempValue1 form-control" val="1" style="border:1px solid #fff;visibility: hidden;" value="1" role="{required:true}">
+								</div>
+								<select class='form-control'  name='hisView' id="hisView" style="background:rgba(0,0,0,0);position:relative;z-index:99" >
+									<option value='1'>一天</option>
+									<option value='2'>最近一周</option>
+									<option value='3'>一个月</option>
+									<option value='0'>任意时间</option>
+									<option id="dateOption1">时间段</option>
+								</select>
+								<input id="date1" style="position: absolute;height: 1px;border:1px solid #fff">
+								<span class="asterisk"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">历史（操作）</label>
+							<div class="col-sm-8">
+								<!--<input type="text" class="form-control select-tree-input" name="hisOperate" resId="" resId="" readonly="" val="" role="{required:true}" />
+								<i class="select-icon fa icon-right fa-angle-down"></i>
+								<div class="select-tree-box">
+									<div class="ztree" id="hisOperate"></div>
+								</div>-->
+								  <div class="form-group">
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option1" name="download">下载
+								    </label>
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option2" name="histSnap">截图
+								    </label>
+								  </div>
+							</div>
+							<!--<span class="asterisk"></span>-->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="pane-box" id="content-2" style="display: none;">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">申请人</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="applicant" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">职务</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="duty" role="{required:true}"/>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">联系电话</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="phone" role="{required:true}"/>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">手机</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="telephone" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid clearfix">
+					<div class="col-md-12 clearfix" style="margin-bottom: 10px;">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">申请原因</label>
+							<div class="col-sm-10" style="padding: 2px 12px;">
+								<textarea type="text" class="form-control" name="reason" role="{required:true}"></textarea>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">申请材料</label>
+							<div class="col-sm-8" style="padding: 0px 4px 0px 12px">
+								<input type="file" class="form-control" name="multipartFile" id="inputFile"/>
+							</div>
+							<div class="col-sm-2 text-right" style="padding:0px 11px 0px 2px">
+								<a class="btn btn-primary " id="upfile">上传</a>
+								<span class="color-red"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

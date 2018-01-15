@@ -1,0 +1,23 @@
+[
+	{"label":"编目管理","id":"0","pid":"root","icon":"fa fa-list"},
+	{"label":"目录管理","id":"0-1","pid":"0","url":"catalogingManage/catalogManage/catalogManage.html"},
+	{"label":"资源管理","id":"1","pid":"root","icon":"fa fa-database"},
+	{"label":"发布资源","id":"1-1","pid":"1","url":"resourceManage/resourceRepublish/resourceRepublish.html"},
+	{"label":"媒体源管理","id":"1-2","pid":"1","url":"resourceManage/streamingMediaManage/streamingMedia.html"},
+	{"label":"摄像设备管理","id":"0-2","pid":"1","url":"resourceManage/filmEquipment/filmEquipment.html"},
+	{"label":"组网管理","id":"2","pid":"root","icon":"fa fa-sitemap"},
+	{"label":"单位管理","id":"2-1","pid":"2","url":"networkManage/unitsManage/unitsManage.html"},
+	{"label":"单位级别","id":"2-2","pid":"2","url":"networkManage/unitLevel/unitLevel.html"},
+	{"label":"系统监控","id":"3","pid":"root","icon":"fa fa-television"},
+	{"label":"实时监控","id":"3-1","pid":"3","url":"systemMonitor/constantMonitor/constantMonitor.html"},
+	{"label":"安全审计","id":"4","pid":"root","icon":"fa fa-newspaper-o"},
+	{"label":"业务审计","id":"4-1","pid":"4","url":"safeAudit/logAudit/bussinessAudit.html"},
+	{"label":"安全配置","id":"4-2","pid":"4","url":"safeAudit/safeSetting/safeSetting.html"},
+	{"label":"用户审计","id":"4-3","pid":"4","url":"safeAudit/userAudit/userAudit.html"},
+	{"label":"系统管理","id":"5","pid":"root","icon":"fa fa-cog"},
+	{"label":"角色管理","id":"5-1","pid":"5","url":"systemManage/roleManage/roleManage.html"},
+	{"label":"用户管理","id":"5-2","pid":"5","url":"systemManage/userManage/userManage.html"},
+	{"label":"审批管理","id":"6","pid":"root","icon":"fa fa-cog"},
+	{"label":"订阅审批","id":"6-1","pid":"6","url":"resourceManage/subscriptionApproval/subscriptionApproval.html"},
+	{"label":"注册审批","id":"6-2","pid":"6","url":"resourceManage/registerApproval/registerApproval.html"}
+]

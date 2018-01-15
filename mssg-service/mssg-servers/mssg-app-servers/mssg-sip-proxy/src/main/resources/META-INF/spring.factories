@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.fable.mssg.proxy.sip.config.SipConfig

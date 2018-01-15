@@ -1,0 +1,54 @@
+{
+	"recordsTotal": 57,
+	"recordsFiltered": 57,
+	"data": [	
+		{			
+			"id":"1",
+			"resName":"青岩古镇",
+			"resType":"景点",
+			"createUser":"王小明",
+			"approvalMan":"李小四",
+			"state":"已发布"
+		},
+		{			
+			"id":"2",
+			"resName":"黔灵山",
+			"resType":"景点",
+			"createUser":"王小明",
+			"approvalMan":"李小四",
+			"state":"未提交"
+		},
+		{			
+			"id":"3",
+			"resName":"天河潭",
+			"resType":"景点",
+			"createUser":"王小明",
+			"approvalMan":"李小四",
+			"state":"未提交"
+		},	
+		{			
+			"id":"4",
+			"resName":"青岩古镇",
+			"resType":"景点",
+			"createUser":"王小明",
+			"approvalMan":"李小四",
+			"state":"未提交"
+		},
+		{			
+			"id":"5",
+			"resName":"黔灵山",
+			"resType":"景点",
+			"createUser":"王小明",
+			"approvalMan":"李小四",
+			"state":"待审核"
+		},
+		{			
+			"id":"6",
+			"resName":"天河潭",
+			"resType":"景点",
+			"createUser":"王小明",
+			"approvalMan":"李小四",
+			"state":"待发布"
+		}
+	]
+}

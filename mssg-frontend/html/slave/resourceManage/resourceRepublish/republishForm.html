@@ -1,0 +1,172 @@
+<div class="row-fluid clearfix">
+	<ul class="step-list clearfix">
+		<li class="active">
+			<span>选择媒体资源</span>
+			<div class="wrap">
+				<div class="circle-box">1</div>
+			</div>
+		</li>
+		<li>
+			<span>选择发布范围</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">2</div>
+			</div>
+		</li>
+		<li>
+			<span>发布预览</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">3</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="row-fluid clearfix">
+	<div class="panes-content">
+		<div class="pane-box" id="content-1">
+			<div class="media-input-box row form-inline">
+				<label class="control-label">请输入媒体源：</label>
+				<input class="form-control media-input" value="" />
+			</div>
+			<div class="content_wrap">
+				<div class="ztrees-container left">
+					<label>源设备目录：</label>
+					<input class="form-control" value="" placeholder="请输入设备名称" />
+					<div class="before-tree"><span>请先输入媒体源</span></div>
+					<ul id="treeDemo" class="ztree" style="display: none;"></ul>
+				</div>
+				<div class="ztrees-container right">
+					<label>编排设备目录：</label>
+					<input class="form-control" value="" placeholder="请输入设备名称" />
+					<div class="before-tree"><span>请先输入媒体源</span></div>
+					<ul id="treeDemo2" class="ztree" style="display:none"></ul>
+				</div>
+			</div>		
+		</div>
+		<div class="pane-box" id="content-2" style="display: none;">
+			<div id="container">
+				<table id="listTable" class="list">
+					<thead>
+						<tr>
+							<th><input type="checkbox" />资源名称</th>
+							<th><input type="checkbox" />实时（观看）</th>
+							<th><input type="checkbox" />实时（设备控制）</th>
+							<th><input type="checkbox" />历史（任意时间）</th>
+							<th><input type="checkbox" />历史（指定时间）</th>
+							<th><input type="checkbox" />操作（录像）</th>
+							<th><input type="checkbox" />操作（拍照）</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="outer">
+							<td><span class="switch"></span><span class="ico"></span><span class="name">旅游</span></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+						</tr>
+						<tr class="inner">
+							<td colspan="7">
+								<table class="list">
+									<tr class="outer">
+										<td><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">XX公园</span></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+									</tr>
+									<tr class="inner">
+										<td colspan="7">
+											<table class="list">
+												<tr class="leaf">
+													<td><span class="text-indent"></span><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">XX设备</span></td>
+													<td><input type="checkbox" /></td>
+													<td><input type="checkbox" /></td>
+													<td><input type="checkbox" /></td>
+													<td><input type="checkbox" /></td>
+													<td><input type="checkbox" /></td>
+													<td><input type="checkbox" /></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="leaf">
+							<td><span class="switch"></span><span class="ico"></span><span class="name">XX花园</span></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+						</tr>
+						<tr class="outer">
+							<td><span class="switch"></span><span class="ico"></span><span class="name">XX花园</span></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" /></td>
+						</tr>
+						<tr class="inner">
+							<td colspan="7">
+								<table class="list">
+									<tr class="leaf">
+										<td><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">设备1</span></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+										<td><input type="checkbox" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="pane-box" id="content-3" style="display: none;">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">申请原因</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="applyReason" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">联系人</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="linkman" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">联系电话</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="telephone" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

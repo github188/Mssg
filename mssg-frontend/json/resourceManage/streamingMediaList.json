@@ -1,0 +1,54 @@
+{
+	"recordsTotal": 57,
+	"recordsFiltered": 57,
+	"data": [	
+		{			
+			"id":"1",
+			"platformName":"视频综合平台1",
+			"ipAddress":"192.168.22.66",
+			"port":"5050",
+			"type":"上级",
+			"manufacturer":"海康"
+		},
+		{			
+			"id":"2",
+			"platformName":"视频综合平台2",
+			"ipAddress":"192.168.22.66",
+			"port":"5060",
+			"type":"下级",
+			"manufacturer":"大华"
+		},
+		{			
+			"id":"3",
+			"platformName":"视频综合平台3",
+			"ipAddress":"192.168.22.66",
+			"port":"6010",
+			"type":"上级",
+			"manufacturer":"伟业"
+		},
+		{			
+			"id":"4",
+			"platformName":"视频综合平台4",
+			"ipAddress":"192.168.22.66",
+			"port":"6020",
+			"type":"上级",
+			"manufacturer":"海康"
+		},
+		{			
+			"id":"5",
+			"platformName":"视频综合平台5",
+			"ipAddress":"192.168.22.66",
+			"port":"6030",
+			"type":"下级",
+			"manufacturer":"大华"
+		},
+		{			
+			"id":"6",
+			"platformName":"视频综合平台6",
+			"ipAddress":"192.168.22.66",
+			"port":"6060",
+			"type":"上级",
+			"manufacturer":"伟业"
+		}
+	]
+}

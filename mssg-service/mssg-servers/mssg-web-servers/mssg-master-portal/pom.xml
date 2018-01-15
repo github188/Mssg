@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mssg-web-servers</artifactId>
+        <groupId>com.fable.mssg</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>MSSG Master Portal</name>
+    <description>MSSG Master Portal</description>
+    <artifactId>mssg-master-portal</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <main.basedir>${basedir}/..</main.basedir>
+        <start-class>com.fable.mssg.master.MasterApplication</start-class>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-user</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-audit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-resource</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-equipment</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

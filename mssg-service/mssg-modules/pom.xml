@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mssg-parent</artifactId>
+        <groupId>com.fable.mssg</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../mssg-parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>MSSG Modules</name>
+    <description>MSSG Modules</description>
+    <artifactId>mssg-modules</artifactId>
+    <packaging>pom</packaging>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fable.framework</groupId>
+            <artifactId>fable-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>mssg-audit</module>
+        <module>mssg-equipment</module>
+        <module>mssg-resource</module>
+        <module>mssg-user</module>
+        <module>fable-proxy</module>
+        <module>mssg-webdomains</module>
+    </modules>
+</project>

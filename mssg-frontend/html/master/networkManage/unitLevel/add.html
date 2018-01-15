@@ -1,0 +1,35 @@
+<form class="form-horizontal" id="form">
+	<div class="row-fluid clearfix">
+		<div class="col-md-offset-2 col-md-8">
+			<div class="form-group">
+			    <label class="col-sm-2 control-label" >等级</label>
+			    <div class="col-sm-10">
+			      <select class="form-control" id="comLevel">
+			      </select>
+			    </div>
+			    <span class="asterisk"></span>
+		    </div>
+		</div>
+		<div class="col-md-offset-2 col-md-8">
+		    <div class="form-group">
+			    <label class="col-sm-2 control-label" >设备等级</label>
+			    <div class="col-sm-10">
+			      <input class="form-control select-tree-input" name="levelJson" id="levelJson" role={"required":true} readonly />
+				  <i class="select-icon fa icon-right fa-angle-down"></i>
+				  <div class="select-tree-box">
+					<div class="ztree" id="levelJsonContent"  name="levelJsonContent"></div>
+				  </div>
+			    </div>
+			    <span class="asterisk"></span>
+			</div>
+		</div>
+		<div class="col-md-offset-2 col-md-8">
+		    <div class="form-group">
+			    <label class="col-sm-2 control-label">备注</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="remark" role="{zhLength:2000}"/>
+			    </div>
+			</div>
+		</div>
+	</div>
+</form>

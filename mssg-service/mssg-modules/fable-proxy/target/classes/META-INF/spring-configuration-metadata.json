@@ -1,0 +1,149 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "name": "fable.proxy.sip",
+      "type": "com.fable.framework.proxy.sip.config.SipProxyProperties"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties",
+      "name": "fable.proxy.sip-media",
+      "type": "com.fable.framework.proxy.sip.config.MediaProperties"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties",
+      "name": "fable.proxy.sip-media.backward",
+      "type": "com.fable.framework.proxy.sip.config.MediaProperties$Backward"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties",
+      "name": "fable.proxy.sip-media.forward",
+      "type": "com.fable.framework.proxy.sip.config.MediaProperties$Forward"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "name": "fable.proxy.sip.tcp-backward",
+      "type": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpBackward"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "name": "fable.proxy.sip.tcp-forward",
+      "type": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpForward"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "name": "fable.proxy.sip.udp-backward",
+      "type": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpBackward"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "name": "fable.proxy.sip.udp-forward",
+      "type": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpForward"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties$Backward",
+      "name": "fable.proxy.sip-media.backward.client-hostname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties$Backward",
+      "name": "fable.proxy.sip-media.backward.hostname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties$Forward",
+      "name": "fable.proxy.sip-media.forward.client-hostname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties$Forward",
+      "name": "fable.proxy.sip-media.forward.hostname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties$Forward",
+      "name": "fable.proxy.sip-media.forward.proxy-hostname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties$Forward",
+      "defaultValue": 0,
+      "name": "fable.proxy.sip-media.forward.proxy-port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.MediaProperties",
+      "name": "fable.proxy.sip-media.proxy-address",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "name": "fable.proxy.sip.media-server",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties",
+      "defaultValue": -1,
+      "name": "fable.proxy.sip.sip-session-expire",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpBackward",
+      "name": "fable.proxy.sip.tcp-backward.client",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpBackward",
+      "name": "fable.proxy.sip.tcp-backward.server",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpForward",
+      "name": "fable.proxy.sip.tcp-forward.client",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpForward",
+      "name": "fable.proxy.sip.tcp-forward.gateway",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$TcpForward",
+      "name": "fable.proxy.sip.tcp-forward.server",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpBackward",
+      "name": "fable.proxy.sip.udp-backward.client",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpBackward",
+      "name": "fable.proxy.sip.udp-backward.gateway",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpBackward",
+      "name": "fable.proxy.sip.udp-backward.server",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpForward",
+      "name": "fable.proxy.sip.udp-forward.client",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpForward",
+      "name": "fable.proxy.sip.udp-forward.gateway",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.framework.proxy.sip.config.SipProxyProperties$UdpForward",
+      "name": "fable.proxy.sip.udp-forward.server",
+      "type": "com.fable.framework.core.config.Address"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": 1,
+			"areaName": "根目录",
+			"areaCode": "123",
+			"media_id": null,
+			"pid":null
+		},
+		{
+			"id": 2,
+			"areaName": "旅游目录",
+			"areaCode": "123",
+			"pid": 1
+		}, {
+			"id": 3,
+			"areaName": "城市管理",
+			"areaCode": "123",
+			"pid": 1
+		}, {
+			"id": 4,
+			"areaName": "学校目录",
+			"areaCode": "123",
+			"pid": 1
+		}
+	]
+}

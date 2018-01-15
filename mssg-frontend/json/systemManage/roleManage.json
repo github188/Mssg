@@ -1,0 +1,48 @@
+{
+	"recordsTotal": 57,
+	"recordsFiltered": 57,
+	"data": [	
+		{			
+			"id":"1",
+			"roleName":"超级管理员",
+			"desc":"超级管理员",
+			"menu":"-"
+		},
+		{			
+			"id":"2",
+			"roleName":"数据管理员",
+			"desc":"数据管理员",
+			"menu":"-"
+		},
+		{			
+			"id":"3",
+			"roleName":"日志审计员",
+			"desc":"日志审计员",
+			"menu":"-"
+		},
+		{			
+			"id":"4",
+			"roleName":"统计分析员",
+			"desc":"统计分析员",
+			"menu":"-"
+		},
+		{
+			"id":"5",
+			"roleName":"审核员",
+			"desc":"审核员",
+			"menu":"-"
+		},
+		{
+			"id":"6",
+			"roleName":"单位管理员",
+			"desc":"单位管理员",
+			"menu":"-"
+		},
+		{
+			"id":"7",
+			"roleName":"单位访问员",
+			"desc":"单位访问员",
+			"menu":"-"
+		}
+	]
+}

@@ -1,0 +1,95 @@
+<form class="form-horizontal" id="form">
+	<div class="row-fluid clearfix">
+		<div class="clearfix">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">单位名称</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" name="companyName" value="" role="{required:true,zhLength:50}" />
+					</div>
+					<span class="asterisk"></span>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">联系人</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" value="" name="contacts" role="{required:true,zhLength:64}" />
+					</div>
+					<span class="asterisk"></span>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">职务</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" value="" name="position" role="{required:true,zhLength:50}" />
+					</div>
+					<span class="asterisk"></span>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">办公室电话</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" value="" name="officePhone" role="{telephone:true,zhLength:50}"/>
+					</div>
+					<!--<span class="asterisk"></span>-->
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">手机</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" value="" name="phone" role="{mobile:true,zhLength:11}"/>
+					</div>
+					<!--<span class="asterisk"></span>-->
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">单位级别</label>
+					<div class="col-sm-8">
+						<select class="form-control comLevel" name="level" role="{required:true}">
+						</select>
+					</div>
+					<span class="asterisk"></span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+		    <div class="form-group">
+			    <label class="col-sm-4 control-label">单位访问IP段</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" value="" name="ipSegement"  role="{ip:true}"/>
+			    </div>
+			    <!--<span class="asterisk"></span>-->
+			</div>
+		</div>
+		<div class="col-md-6">
+		    <div class="form-group">
+			    <label class="col-sm-4 control-label">单位类型</label>
+			    <div class="col-sm-8">
+			      <select class="form-control" name="comType" role="{required:true}">
+			      	<option value="1">管理单位</option>
+			      	<option value="2">共享单位</option>
+			      </select>
+			    </div>
+			    <span class="asterisk"></span>
+			</div>
+		</div>
+		<div class="col-md-12">
+		    <div class="form-group">
+			    <label class="col-sm-2 control-label">单位地址</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" value="" name="address" role="{required:true,zhLength:256}"/>
+			    </div>
+			    <span class="asterisk"></span>
+			</div>
+		</div>
+	</div>
+</form>

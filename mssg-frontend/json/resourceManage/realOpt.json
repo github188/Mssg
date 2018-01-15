@@ -1,0 +1,31 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"deviceId": "1",
+			"mediaName": "实时操作",
+			"children": [
+				{
+					"deviceId": "1",
+					"mediaName": "控制",
+					"children": [
+					]
+				},
+				{
+					"deviceId": "2",
+					"mediaName": "录像",
+					"children": [
+					]
+				},
+				{
+					"deviceId": "3",
+					"mediaName": "截图",
+					"children": [
+					]
+				}
+			]
+		}
+	]
+}

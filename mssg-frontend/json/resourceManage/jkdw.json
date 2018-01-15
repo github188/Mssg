@@ -1,0 +1,37 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"deviceId": "1",
+			"mediaName": "一类视频监控点",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "2",
+			"mediaName": "二类视频监控点",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "3",
+			"mediaName": "三类视频监控点",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "4",
+			"mediaName": "公安内部视频监控点",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "9",
+			"mediaName": "其他点位",
+			"children": [
+			]
+		}
+	]
+}

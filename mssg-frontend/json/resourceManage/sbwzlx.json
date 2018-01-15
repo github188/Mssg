@@ -1,0 +1,121 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"deviceId": "1",
+			"mediaName": "省际检查站",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "2",
+			"mediaName": "党政机关",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "3",
+			"mediaName": "车站码头",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "4",
+			"mediaName": "中心广场",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "5",
+			"mediaName": "体育场馆",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "6",
+			"mediaName": "商业中心",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "7",
+			"mediaName": "宗教场所",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "8",
+			"mediaName": "校园周边",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "9",
+			"mediaName": "治安复杂区域",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "10",
+			"mediaName": "交通干线",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "11",
+			"mediaName": "医院周边",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "12",
+			"mediaName": "金融机构周边",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "13",
+			"mediaName": "危险物品场所周边",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "14",
+			"mediaName": "博物馆展览馆",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "15",
+			"mediaName": "重点水域、航道",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "96",
+			"mediaName": "市际公安检查站",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "97",
+			"mediaName": "涉外场所",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "98",
+			"mediaName": "边境沿线",
+			"children": [
+			]
+		},
+		{
+			"deviceId": "99",
+			"mediaName": "旅游景区",
+			"children": [
+			]
+		}
+	]
+}

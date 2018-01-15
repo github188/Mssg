@@ -1,0 +1,164 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment",
+      "type": "com.fable.mssg.catalog.config.MasterConfigProperties"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment.authorize",
+      "type": "com.fable.mssg.catalog.config.MasterConfigProperties$Authorize"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment.encryption",
+      "type": "com.fable.mssg.catalog.config.MasterConfigProperties$Encryption"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment.master",
+      "type": "com.fable.mssg.catalog.config.MasterConfigProperties$Master"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment.schedule",
+      "type": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment.slave",
+      "type": "com.fable.mssg.catalog.config.MasterConfigProperties$Slave"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Authorize",
+      "name": "com.fable.mssg.equipment.authorize.algorithm",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Authorize",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.authorize.duration",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Authorize",
+      "name": "com.fable.mssg.equipment.authorize.nonce",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Authorize",
+      "name": "com.fable.mssg.equipment.authorize.realm",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Encryption",
+      "name": "com.fable.mssg.equipment.encryption.aes-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Encryption",
+      "name": "com.fable.mssg.equipment.encryption.des-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Encryption",
+      "name": "com.fable.mssg.equipment.encryption.tri-des-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Master",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.master.expires",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Master",
+      "name": "com.fable.mssg.equipment.master.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Master",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.master.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Master",
+      "name": "com.fable.mssg.equipment.master.user",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties",
+      "name": "com.fable.mssg.equipment.remote-server",
+      "type": "com.fable.framework.core.config.Address"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.keepalive-delay",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.keepalive-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.q-delay",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.q-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.reg-delay",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.reg-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.sub-delay",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Schedule",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.schedule.sub-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Slave",
+      "name": "com.fable.mssg.equipment.slave.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Slave",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.equipment.slave.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.catalog.config.MasterConfigProperties$Slave",
+      "name": "com.fable.mssg.equipment.slave.slave-id",
+      "type": "java.lang.String"
+    }
+  ]
+}

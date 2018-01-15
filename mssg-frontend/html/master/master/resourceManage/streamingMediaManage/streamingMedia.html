@@ -1,0 +1,21 @@
+<div class="content-box">
+	<div class="btns-box">
+		<div class="row-fluid">
+			<button type="button" class="btn btn-no-border" operate="view" disabled><span class="iconfont icon-chakan3"></span>查看</button>
+			<button type="button" class="btn btn-no-border" operate="add"><span class="iconfont icon-xinzeng"></span>新增</button>
+			<button type="button" class="btn btn-no-border" operate="edit" disabled><span class="iconfont icon-bianji"></span>修改</button>
+			<button type="button" class="btn btn-no-border" operate="del" disabled><span class="iconfont icon-3"></span>删除</button>
+			<button type="button" class="btn btn-no-border" operate="catalog"><span class="iconfont icon-mulu2"></span>媒体源设备目录</button>
+		</div>
+		
+	</div>
+	<div class="table-box">
+		<table class="table table-primary table-bordered table-striped text-center" id="platformList"></table>
+	</div>
+</div>
+
+<script>
+	require(["app/resourceManage/streamingMediaApp"], function(app) {
+		app.run();
+	});
+</script>

@@ -1,0 +1,54 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"name": "媒体格式",
+			"code": "123",
+			"media_id": null,
+			"children": [
+				{
+					"id": "2",
+					"name": "视频格式",
+					"code": "123",
+					"media_id": null,
+					"children": [{
+						"id": "3",
+						"name": "H.264",
+						"code": "123",
+						"media_id": null,
+						"children": []
+					},
+					{
+						"id": "4",
+						"name": "MPEG-4",
+						"code": "123",
+						"media_id": null,
+						"children": []
+					},
+						{
+							"id": "5",
+							"name": "PS",
+							"code": "123",
+							"media_id": null,
+							"children": []
+						}]
+				}, {
+					"id": "6",
+					"name": "音频格式",
+					"code": "123",
+					"media_id": null,
+					"children": [{
+						"id": "7",
+						"name": "G7.11",
+						"code": "123",
+						"media_id": null,
+						"children": []
+					}]
+				}
+			]
+		}
+	]
+}

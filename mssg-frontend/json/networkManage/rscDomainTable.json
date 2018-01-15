@@ -1,0 +1,34 @@
+{
+	"recordsTotal": 57,
+	"recordsFiltered": 57,
+	"data": [	
+		{			
+			"id":"1",
+			"domainName":"旅游域",
+			"domainAdministrator":"赵小六",
+			"telephone":"59867878",
+			"unit":"旅游管理中心"
+		},
+		{			
+			"id":"2",
+			"domainName":"城市管理域",
+			"domainAdministrator":"周小七",
+			"telephone":"59867878",
+			"unit":"城管中心"
+		},
+		{			
+			"id":"3",
+			"domainName":"社区服务域",
+			"domainAdministrator":"赵小六",
+			"telephone":"86430686",
+			"unit":"社区服务中心"
+		},
+		{			
+			"id":"4",
+			"domainName":"本地域",
+			"domainAdministrator":"赵小六",
+			"telephone":"84690424",
+			"unit":"本地域"
+		}
+	]
+}

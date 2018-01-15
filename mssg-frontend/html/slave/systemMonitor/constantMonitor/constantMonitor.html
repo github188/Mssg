@@ -1,0 +1,76 @@
+<div class="content-padding-box" project="slave">
+    <div class="row-fluid clearfix" id="detail-boxs" style="margin-bottom:10px">
+
+    </div>
+    <!--热门资源排名top10-->
+    <div class="row-fluid clearfix" id="tables">
+        <div class="col-md-12">
+            <div class="table-pane">
+                <div class="pane-header">
+                    <span>热门资源排名 TOP10</span>
+                    <div class="pull-right">
+                       <ul class="nav time-change-tab" name="热门资源排名">
+                           <li class="active">
+                               <a href="#resTabContent-1" id="resTab-1" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="true" value="1">今日</a>
+                           </li>
+                           <li class="">
+                               <a href="#resTabContent-1" id="resTab-2" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="false" value="7">本周</a>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="pane-body tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="resTabContent-1" aria-labelledby="tabContent-1">
+                        <table class="table table-primary table-bordered table-striped text-center table-condensed hot-resource"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--用户观看排名-->
+        <div class="col-md-12">
+            <div class="table-pane">
+                <div class="pane-header">
+                    <span>用户观看排名</span>
+                    <div class="pull-right">
+                       <ul class="nav time-change-tab" name="用户观看排名">
+                           <li class="active">
+                               <a href="#tabContent-1" id="tab-1" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="true" value="1">今日</a>
+                           </li>
+                           <li class="">
+                               <a href="#tabContent-1" id="tab-2" role="tab" data-toggle="tab" aria-controls="tabContent-1" aria-expanded="false" value="7">本周</a>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="pane-body tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tabContent-1" aria-labelledby="tabContent-1">
+                        <table class="table table-primary table-bordered table-striped text-center table-condensed user-view-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="detail-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="col-md-3">
+        <div class="num-box clearfix">
+            <div class="left-con">
+                <span class="iconfont {{icon}}"></span>
+            </div>
+            <div class="right-con">
+                <div class="row-fluid num-css text-center">
+                    <span class="num">{{format value}}</span>
+                    <br/>
+                    <span class="title">{{name}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script>
+    require(["app/systemMonitor/systemMonitorApp"],function(app){
+        app.run();
+    });
+</script>

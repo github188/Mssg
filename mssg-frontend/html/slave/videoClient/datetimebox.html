@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>GB视频</title>
+		<link href="../../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="../../../css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+		<link href="../../../css/autoSelect.css" rel="stylesheet" type="text/css">
+		<link href="../../../css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+		<link href="../../../fonts/iconfont.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../../../css/zTreeStyle/zTreeStyle.css" type="text/css">
+		<link rel="stylesheet" href="../../../css/zTreeStyle/ztree-skin.css" type="text/css">
+		<link href="../../../css/theme.css" rel="stylesheet" type="text/css">
+		<link href="../../../js/lib/laydate/theme/default/laydate.css" rel="stylesheet" type="text/css">
+
+		<script src="../../../js/lib/require.js"></script>
+		<script src="../../../js/lib/config.js"></script>
+
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="../../../css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if lte IE 6]>
+		  <link rel="stylesheet"ac type="text/css" href="../../../css/bootstrap-ie6-min.css">
+		  <![endif]-->
+		<!--[if lte IE 7]>
+		  <link rel="stylesheet" type="textcss" href="../../../css/ie.css">
+		  <![endif]-->
+		<!--[if lt IE 9]>
+			<script src="../../../js/lib/html5shiv.min.js"></script>
+			<script src="../../../js/lib/respond.min.js"></script>
+		<![endif]-->
+		<!--[if lte IE 6]>
+			<script type="text/javascript" src="../../../js/lib/bootstrap-ie.js"></script>
+		<![endif]-->
+		<!--[if IE]>
+			<script type="text/javascript" src="../../../js/lib/excanvas.compiled.js"></script>
+		<![endif]-->
+	</head>
+	<body class="iframe-content">
+		<div class="date-picker" id="datePicker">
+			<div class="date-picker-year"></div>
+		</div>
+
+		<script>
+			require(["app/videoClient/dateTimeApp"],function(app){
+				app.run();
+			});
+		</script>
+	</body>
+</html>

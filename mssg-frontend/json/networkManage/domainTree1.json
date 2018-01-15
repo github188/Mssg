@@ -1,0 +1,40 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"ds_name": "根域",
+			"ds_code": "123",
+			"media_id": null,
+			"children": [
+				{
+					"id": "2",
+					"ds_name": "旅游域",
+					"ds_code": "123",
+					"media_id": null,
+					"children": []
+				}, {
+					"id": "3",
+					"ds_name": "城管域",
+					"ds_code": "123",
+					"media_id": null,
+					"children": []
+				}, {
+					"id": "4",
+					"ds_name": "水利域",
+					"ds_code": "123",
+					"media_id": null,
+					"children": []
+				}, {
+					"id": "5",
+					"ds_name": "XX域",
+					"ds_code": "123",
+					"media_id": null,
+					"children": []
+				}
+			]
+		}
+	]
+}

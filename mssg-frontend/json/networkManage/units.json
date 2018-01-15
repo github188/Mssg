@@ -1,0 +1,30 @@
+{
+	"recordsTotal": 57,
+	"recordsFiltered": 57,
+	"data": [	
+		{			
+			"id":"1",
+			"unitName":"南京市公安局",
+			"unitCode":"002001",
+			"description":"旅游景点目录"
+		},
+		{			
+			"id":"2",
+			"unitName":"南京市公安局技侦支队",
+			"unitCode":"002002",
+			"description":"旅游景点目录"
+		},
+		{			
+			"id":"3",
+			"unitName":"公园广场",
+			"unitCode":"002003",
+			"description":"旅游景点目录"
+		},
+		{			
+			"id":"4",
+			"unitName":"特色街区",
+			"unitCode":"002004",
+			"description":"旅游景点目录"
+		}
+	]
+}

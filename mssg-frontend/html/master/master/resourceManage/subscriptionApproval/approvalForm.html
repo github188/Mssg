@@ -1,0 +1,228 @@
+<div class="row-fluid clearfix">
+	<ul class="step-list clearfix">
+		<li class="active">
+			<span>请求方信息</span>
+			<div class="wrap">
+				<div class="circle-box">1</div>
+			</div>
+		</li>
+		<li>
+			<span>元数据信息</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">2</div>
+			</div>
+		</li>
+		<li>
+			<span>请求权限处理</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">3</div>
+			</div>
+		</li>
+		<li>
+			<span>填写审批意见</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">4</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="row-fluid clearfix">
+	<div class="panes-content">
+		<div class="pane-box" id="content-1">
+			<table class="table table-bordered table-info">
+				<tr>
+					<td>申请单位</td>
+					<td>南京市公安局</td>
+					<td>申请订阅时间</td>
+					<td>2017-19-14 11:30</td>
+				</tr>
+				<tr>
+					<td>联系人</td>
+					<td>冯磊</td>
+					<td>联系电话</td>
+					<td>58896699</td>
+				</tr>
+				<tr>
+					<td>申请原因</td>
+					<td>对接视频系统</td>
+					<td>资源类型</td>
+					<td>视频</td>
+				</tr>
+			</table>
+		</div>
+		<div class="pane-box" id="content-2" style="display: none;">
+			<div class="row-fluid clearfix">
+				<div class="col-md-3">
+					<div class="pane-box">
+						<div class="pane-header">
+							<span>发布资源</span>
+						</div>
+						<div class="media">
+							<div class="media-body">
+								<div class="ztree" id="resouceTree"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="pane-box">
+						<div class="pane-header">
+							<span>元数据信息</span>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" data-src="holder.js/96x96" src="../../images/tianhetan.jpg" data-holder-rendered="true" style="width: 96px; height: 96px;">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">天河潭</h4>
+								<span>天河潭位于贵阳市花溪区石板镇，天河潭是以典型喀斯特自然风光为主、历史名人隐士文化为辅的风景名胜区，距贵阳市中心24公里。</span>
+								<table class="table table-bordered table-info">
+									<tr>
+										<td>资源名称</td>
+										<td>nj-1010</td>
+										<td>资源英文名称</td>
+										<td>njrc</td>
+									</tr>
+									<tr>
+										<td>资源类型</td>
+										<td>视频</td>
+										<td>资源等级</td>
+										<td>部分共享</td>
+									</tr>
+									<tr>
+										<td>主题分类</td>
+										<td>人口</td>
+										<td>行业分类</td>
+										<td>公安</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="pane-box" id="content-3" style="display: none;">
+			<div id="container">
+				<table id="listTable" class="list">
+					<thead>
+						<tr>
+							<th>资源名称</th>
+							<th><input class="checkAll" attr="1" type="checkbox" />实时（观看）</th>
+							<th><input class="checkAll" attr="2" type="checkbox" />实时（设备控制）</th>
+							<th><input class="checkAll" attr="3" type="checkbox" />历史（任意时间）</th>
+							<th><input class="checkAll" attr="4" type="checkbox" />历史（指定时间）</th>
+							<th><input class="checkAll" attr="5" type="checkbox" />操作（录像）</th>
+							<th><input class="checkAll" attr="6" type="checkbox" />操作（拍照）</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="outer">
+							<td><span class="switch"></span><span class="ico"></span><span class="name">旅游</span></td>
+							<td><input class="checkSingle" attr="1" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="2" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="3" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="4" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="5" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="6" type="checkbox" /></td>
+						</tr>
+						<tr class="inner">
+							<td colspan="7">
+								<table class="list">
+									<tr class="outer">
+										<td><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">XX公园</span></td>
+										<td><input class="checkSingle" attr="1" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="2" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="3" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="4" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="5" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="6" type="checkbox" /></td>
+									</tr>
+									<tr class="inner">
+										<td colspan="7">
+											<table class="list">
+												<tr class="leaf">
+													<td><span class="text-indent"></span><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">XX设备</span></td>
+													<td><input class="checkSingle" attr="1" type="checkbox" /></td>
+													<td><input class="checkSingle" attr="2" type="checkbox" /></td>
+													<td><input class="checkSingle" attr="3" type="checkbox" /></td>
+													<td><input class="checkSingle" attr="4" type="checkbox" /></td>
+													<td><input class="checkSingle" attr="5" type="checkbox" /></td>
+													<td><input class="checkSingle" attr="6" type="checkbox" /></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="leaf">
+							<td><span class="switch"></span><span class="ico"></span><span class="name">XX花园</span></td>
+							<td><input class="checkSingle" attr="1" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="2" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="3" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="4" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="5" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="6" type="checkbox" /></td>
+						</tr>
+						<tr class="outer">
+							<td><span class="switch"></span><span class="ico"></span><span class="name">XX花园</span></td>
+							<td><input class="checkSingle" attr="1" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="2" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="3" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="4" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="5" type="checkbox" /></td>
+							<td><input class="checkSingle" attr="6" type="checkbox" /></td>
+						</tr>
+						<tr class="inner">
+							<td colspan="7">
+								<table class="list">
+									<tr class="leaf">
+										<td><span class="text-indent"></span><span class="switch"></span><span class="ico"></span><span class="name">设备1</span></td>
+										<td><input class="checkSingle" attr="1" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="2" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="3" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="4" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="5" type="checkbox" /></td>
+										<td><input class="checkSingle" attr="6" type="checkbox" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="pane-box" id="content-4" style="display: none;">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">审批结果</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="approvalResult" role="{required:true}">
+									<option>同意订阅</option>
+									<option>拒绝订阅</option>
+								</select>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">审批意见</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="approvalAdvice" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

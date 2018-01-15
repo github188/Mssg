@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <property name="LOG_HOME" value="d:/data/logs/slave" />
+    <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/mssg-slave.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>${LOG_HOME}/mssg-slave.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!-- keep 10 days' worth of history -->
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+
+        <!-- 压缩日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/mssg-slave.%i.log.zip</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>20MB</MaxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="dailyRollingFileAppender" />
+    </root>
+</configuration>

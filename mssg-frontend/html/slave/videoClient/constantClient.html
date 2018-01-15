@@ -1,0 +1,252 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>GB视频</title>
+	<link href="../../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/autoSelect.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+	<link href="../../../fonts/iconfont.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../../../css/zTreeStyle/zTreeStyle.css" type="text/css">
+	<link rel="stylesheet" href="../../../css/zTreeStyle/ztree-skin.css" type="text/css">
+	<link href="../../../css/theme.css" rel="stylesheet" type="text/css">
+	<link href="../../../js/lib/laydate/theme/default/laydate.css" rel="stylesheet" type="text/css">
+
+	<script src="../../../js/lib/require.js"></script>
+	<script src="../../../js/lib/config.js"></script>
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="../../../css/font-awesome-ie7.min.css">
+	<![endif]-->
+	<!--[if lte IE 6]>
+      <link rel="stylesheet"ac type="text/css" href="../../../css/bootstrap-ie6-min.css">
+      <![endif]-->
+	<!--[if lte IE 7]>
+      <link rel="stylesheet" type="textcss" href="../../../css/ie.css">
+      <![endif]-->
+	<!--[if lt IE 9]>
+        <script src="../../../js/lib/html5shiv.min.js"></script>
+        <script src="../../../js/lib/respond.min.js"></script>
+    <![endif]-->
+	<!--[if lte IE 6]>
+        <script type="text/javascript" src="../../../js/lib/bootstrap-ie.js"></script>
+    <![endif]-->
+	<!--[if IE]>  
+        <script type="text/javascript" src="../../../js/lib/excanvas.compiled.js"></script>  
+    <![endif]-->
+</head>
+<body class="iframe-content">
+<input class="form-control" id="curPlayIndex" type="hidden" value="0"/>
+<div class="content-box">
+	<!--左侧树-->
+	<div class="left-tree">
+		<div class="tree-box">
+			<div class="tree-box-header">
+				<span class="glyphicon glyphicon-list"></span>
+				资源设备列表
+			</div>
+			<div class="tree-box-body">
+				<div class="row-fluid clearfix">
+					<div class="col-md-12" style="margin-top: 10px;">
+						<div class="col-md-12 equip-tree">
+							<select class="form-control" id="res-device">
+								<option value="-1">全部</option>
+								<option value="1">监控点位类型</option>
+								<option value="2">设备位置类型</option>
+								<option value="3">设备名称</option>
+							</select>
+						</div>
+						<div class="col-md-12 equip-box">
+							<select class="form-control" show="false" name="eqLevel" style="display: none">
+								<option value="1">一类视频监控点</option>
+								<option value="2">二类视频监控点</option>
+								<option value="3">三类视频监控点</option>
+								<option value="4">公安内部视频监控点</option>
+								<option value="9">其他点位</option>
+							</select>
+							<select class="form-control" show="false" name="position" style="display: none">
+								<option value="1">省际检查站</option>
+								<option value="2">党政机关</option>
+								<option value="3">车站码头</option>
+								<option value="4">中心广场</option>
+								<option value="5">体育场馆</option>
+								<option value="6">商业中心</option>
+								<option value="7">宗教场所</option>
+								<option value="8">校园周边</option>
+								<option value="9">治安复杂区域</option>
+								<option value="10">交通干线</option>
+								<option value="11">医院周边</option>
+								<option value="12">金融机构周边</option>
+								<option value="13">危险物品场所周边</option>
+								<option value="14">博物馆展览馆</option>
+								<option value="15">重点水域、航道</option>
+								<option value="96">市际公安检查站</option>
+								<option value="97">涉外场所</option>
+								<option value="98">边境沿线</option>
+								<option value="99">旅游景区</option>
+							</select>
+							<input class="form-control" show="false" name="eqName" style="display: none" value="" placeholder="请输入设备名称"/>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="ztree" id="ztree-bar"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--右侧内容-->
+	<div class="right-content">
+		<div class="content-padding-box">
+			<div class="view-box">
+				<div class="view-container isConstract"><!--isConstract-->
+					<ul class="view-list">
+						<li>
+							<div class="PlayerWindow" style="width: 100%; height: 100%;">
+								<!--<object id="PlayPanel_1" classid="CLSID:1120C742-3990-4E20-8FF3-E98120F6214A" style="width: 100%;height: 100%;position: absolute;z-index: -1;">-->
+
+								<!--</object>-->
+
+								<object id="PlayPanel" classid="CLSID:90C8A3B4-D0E5-4FAE-8D31-3B504062F038" style="width: 100%;height: 100%;position: absolute;z-index: -1;">
+
+									<!--<a href="#">下载插件</a>-->
+
+								</object>
+					        </div>
+						</li>
+					</ul>
+                    <div class="right-operate-box">
+                        <div class="left-box">
+                            <div class="expand-box" isExpand="true"><span class="iconfont icon-retract"></span></div>
+                        </div>
+                        <div class="right-box">
+                            <!--日期-->
+                            <!--<div class="datetime-picker">-->
+
+                            <!--</div>-->
+                            <!--控制按钮-->
+                            <div class="operate-picker">
+								<div class="row-fluid clearfix">
+									<div class="direct-operate">
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-up-left"></span></button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-up"></span></button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-up-right"></span></button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-left"></span></button>
+										<button class="direct-btn btn-common">auto</button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-right"></span></button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-down-left"></span></button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-down"></span></button>
+										<button class="direct-btn btn-common"><span class="iconfont icon-arrow-down-right"></span></button>
+									</div>
+								</div>
+								<div class="row-fluid clearfix" style="padding-left: 10px;">
+									<!--放大缩小、录像截图全屏按钮-->
+                                    <div class="col-md-5 text-left btns-link">
+                                        <button class="btn-link btn-common disabled" disabled title="放大"><span class="iconfont icon-fangda"></span></button>
+                                        <button class="btn-link btn-common disabled" disabled title="缩小"><span class="iconfont icon-liucheng_suoxiaoshitu"></span></button>
+                                    </div>
+									<div class="col-md-7 text-right btns-link">
+										<button class="btn-link btn-common" id="saveVideo" status="0" title="开始录像"><span class="iconfont icon-Group"></span></button>
+										<button class="btn-link btn-common" id="snapScreen" title="截屏"><span class="iconfont icon-paizhao"></span></button>
+										<button class="btn-link btn-common"><span class="iconfont icon-quanping"></span></button>
+									</div>
+								</div>
+                                <!--<div class="row-fluid clearfix volume-box">-->
+                                    <!--<div class="col-md-2 text-right">-->
+                                        <!--<span class="iconfont icon-yinliangda volume-icon"></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-10">-->
+                                        <!--<div class="progress">-->
+                                            <!--<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">-->
+                                                <!--<div class="pull-left volume-terminator" id="drag_element" style="left: 60%;" data-toggle="tooltip" data-placement="top" title="60"></div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <div class="row-fluid clearfix" style="padding-left: 8px;">
+                                    <!--播放按钮-->
+									<div class="btns-link text-center">
+										<button class="btn-link btn-common disabled" disabled><span class="iconfont icon-zanting1"></span></button>
+										<button class="btn-link btn-common disabled" disabled><span class="iconfont icon-zanting2"></span></button>
+										<button class="btn-link btn-common disabled" disabled><span class="iconfont icon-kuaitui-copy"></span></button>
+										<button class="btn-link btn-common disabled" disabled><span class="iconfont icon-pre-copy"></span></button>
+										<button class="btn-link btn-common disabled" disabled><span class="iconfont icon-next"></span></button>
+										<button class="btn-link btn-common disabled" disabled><span class="iconfont icon-kuaijin"></span></button>
+									</div>
+                                </div>
+                            </div>
+                            <!--分屏按钮-->
+                            <div class="screen-picker">
+                                <div class="sreen-icon">
+                                    <div class="btn-icons-box">
+										<button class="no-bg active" num="1"><i class="iconfont icon-yifenping"></i></button>
+										<button class="no-bg" num="4"><i class="iconfont icon-sifenping"></i></button>
+										<button class="no-bg" num="9"><i class="iconfont icon-icon-screen-nine"></i></button>
+
+                                        <!--<li num="16"><button class="no-bg" disabled="true"><i class="iconfont icon-shiliufenping"></i></button></li>-->
+                                    </div>
+                                </div>
+                            </div>
+							<!--关闭-->
+							<!--<div class="screen-picker">-->
+								<!--<button class="btn btn-primary" id="closeCurVedio">关闭</button>-->
+							<!--</div>-->
+                        </div>
+                    </div>
+				</div>
+				<div class="footer-operate-box">
+					<div class="timebar-container">
+						<div class="timebar-box">
+							<ul class="time-bar">
+								<li><label>00:00</label><div class="single-bar"></div></li>
+								<li><label>01:00</label><div class="single-bar"></div></li>
+								<li><label>02:00</label><div class="single-bar"></div></li>
+								<li><label>03:00</label><div class="single-bar"></div></li>
+								<li><label>04:00</label><div class="single-bar"></div></li>
+								<li><label>05:00</label><div class="single-bar"></div></li>
+								<li><label>06:00</label><div class="single-bar"></div></li>
+								<li><label>07:00</label><div class="single-bar"></div></li>
+								<li><label>08:00</label><div class="single-bar"></div></li>
+								<li><label>09:00</label><div class="single-bar"></div></li>
+								<li><label>10:00</label><div class="single-bar"></div></li>
+								<li><label>11:00</label><div class="single-bar"></div></li>
+								<li><label>12:00</label><div class="single-bar"></div></li>
+								<li><label>13:00</label><div class="single-bar"></div></li>
+								<li><label>14:00</label><div class="single-bar"></div></li>
+								<li><label>15:00</label><div class="single-bar"></div></li>
+								<li><label>16:00</label><div class="single-bar"></div></li>
+								<li><label>17:00</label><div class="single-bar"></div></li>
+								<li><label>18:00</label><div class="single-bar"></div></li>
+								<li><label>19:00</label><div class="single-bar"></div></li>
+								<li><label>20:00</label><div class="single-bar"></div></li>
+								<li><label>21:00</label><div class="single-bar"></div></li>
+								<li><label>22:00</label><div class="single-bar"></div></li>
+								<li><label>23:00</label><div class="single-bar"></div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script language="Javascript" event="vlcPlayerNotify(nNotify)" for="PlayPanel"></script>
+<script language="Javascript" event="streamProgress(nStreamId,nProgress)" for="PlayPanel"></script>
+<script language="Javascript" event="erMessage(nMsg,nMessageContent)" for="PlayPanel"></script>
+<script language="Javascript" event="keyMouseEvent(eventId,eventParam)" for="PlayPanel">
+	if(eventId == 1){
+		var index =eventParam.split(":")[1].split("}")[0];
+        var params = [];
+		$("#curPlayIndex").val(index);
+	}
+</script>
+<script>
+	require(["app/videoClient/constantClientApp"],function(app){
+		app.run();
+	});
+</script>
+<!--<script src="../../../js/lib/laydate/laydate.js"></script>-->
+
+</body>
+</html>

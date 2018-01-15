@@ -1,0 +1,31 @@
+{
+    "success":true,
+    "code":"0",
+    "message":"success",
+    "data":{
+        "recordsTotal":"4",
+        "recordsFiltered":"4",
+        "data":[
+            {
+                "id":"1",
+                "level":"一级",
+                "linkLevel":"一类、二类、三类、四类、五类、六类"
+            },
+            {
+                "id":"2",
+                "level":"一级",
+                "linkLevel":"一类、二类、三类、四类、五类、六类"
+            },
+            {
+                "id":"3",
+                "level":"一级",
+                "linkLevel":"一类、二类、三类、四类、五类、六类"
+            },
+            {
+                "id":"4",
+                "level":"一级",
+                "linkLevel":"一类、二类、三类、四类、五类、六类"
+            }
+        ]
+    }
+}

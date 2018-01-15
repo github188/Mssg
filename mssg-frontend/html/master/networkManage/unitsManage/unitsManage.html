@@ -1,0 +1,53 @@
+<div class="content-box">
+	<!--左侧树-->
+	<!--<div class="left-tree">
+		<div class="ztree" id="ztree-bar"></div>
+	</div>-->
+	<!--右侧内容-->
+	<!--<div class="right-content">
+		
+	</div>-->
+	<div class="btns-box">
+	</div>
+	<div id="stateTabContent" class="tab-content">
+		<div role="tabpanel" class="tab-pane fade active in" id="tabContent-1" aria-labelledby="tabContent-1">
+			<div class="form-horizontal form-box clearfix">
+				<div class="row-fluid">
+					<div class="col-md-10">
+						<div class="col-md-4">
+							<div class="form-group">
+							    <label class="col-sm-4 control-label">单位名称</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control" name="nameOrCode" id="nameOrCode"/>
+							    </div>
+						    </div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							    <label class="col-sm-4 control-label">单位级别</label>
+							    <div class="col-sm-8">
+							    	<select class="form-control comLevel" name="comLevel" id="comLevel" >
+							    		<option value="">全部</option>
+							    	</select>
+							    </div>
+						    </div>
+						</div>
+					</div>
+				  	<div class="col-md-2 text-center">
+					  	<button class="btn btn-primary btn-search" id="searchRsc">查询</button>
+				  	</div>
+			  	</div>
+			</div>
+			<div class="resource-list" id="rsc-list">
+				<div class="table-box" id="catalogTable">
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script>
+	require(["app/networkManage/unitsManageApp"],function(app){
+		app.run();
+	});
+</script>

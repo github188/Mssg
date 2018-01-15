@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.min.css"/>
+		<link rel="stylesheet" href="../../css/theme.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/wStyle.min.css"/>
+		<script src="../../js/lib/require.js"></script>
+		<script src="../../js/lib/config.js"></script>
+	</head>
+	<body>
+		<div class="lg_header" project="slave"></div>
+		<div class="lg_article">
+			<div>
+				<div class="lg_formBox">
+					<div class="box_head">用户登录</div>
+					<div class="box_body">
+						<form id="form" action="" onsubmit="return false">
+							<input type="text" placeholder="输入用户名" class="login_ursePass" name="loginName"/>
+							<div class="error_info"></div>
+							<input type="password" placeholder="输入密码" class="login_ursePass" name="password"/>
+							<div class="error_info"></div>
+							<div class="captcha_box">
+								<input type="text" placeholder="输入验证码" name="authCode"/>
+								<img class="captcha_img" onclick="this.src=this.src+'?'">
+							</div>
+							<div class="error_info"></div>
+							<button class="login_submit">登    录</button>
+						</form>
+					</div>
+					<div class="box_foot">
+						还没有账号？
+						<a href="#" id="registerLink">立即注册>></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lg_footer">
+			Copyright @ 2012-2016 江苏飞博软件股份有限公司  京ICP备12050607号
+		</div>
+		<script>
+			require(["app/loginApp"], function(app) {
+				app.run();
+			});
+		</script>
+	</body>
+</html>

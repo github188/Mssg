@@ -1,0 +1,351 @@
+<div class="row-fluid clearfix">
+	<ul class="step-list clearfix">
+		<li class="active">
+			<span>基本属性</span>
+			<div class="wrap">
+				<div class="circle-box">1</div>
+			</div>
+		</li>
+		<li>
+			<span>位置属性</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">2</div>
+			</div>
+		</li>
+		<li>
+			<span>管理属性</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">3</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="row-fluid clearfix">
+	<div class="panes-content">
+		<div class="pane-box" id="content-1">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">设备名称</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="sbmc" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">设备编码</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="sbbm" role="{required:true}" readonly="readonly"/>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">设备厂商</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="sbcs" role="{required:true}">
+									<option value="1">海康威视</option>
+									<option value="2">大华</option>
+									<option value="3">天地伟业</option>
+									<option value="4">科达</option>
+									<option value="5">安讯士</option>
+									<option value="6">博世</option>
+									<option value="7">亚安</option>
+									<option value="8">英飞拓</option>
+									<option value="9">宇视</option>
+									<option value="10">海信</option>
+									<option value="11">中星电子</option>
+									<option value="12">明景</option>
+									<option value="13">联想</option>
+									<option value="14">中兴</option>
+									<option value="15">华为</option>
+									<option value="99">其他</option>
+								</select>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">行政区域</label>
+							<div class="col-sm-8">
+								<input class="form-control select-tree-input" name="xzqy" id="xzqy" readonly />
+								<i class="select-icon fa icon-right fa-angle-down"></i>
+								<div class="select-tree-box">
+									<div class="ztree" id="xzqyContent"  name="xzqyContent"></div>
+								</div>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">监控点位类型</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="jkdwlx" role="{required:true}">
+									<option value="1">一类视频监控点</option>
+									<option value="2">二类视频监控点</option>
+									<option value="3">三类视频监控点</option>
+									<option value="4">公安内部视频监控点</option>
+									<option value="9">其他点位</option>
+								</select>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">设备型号</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="sbxh" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">点位俗称</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="dwsc"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">IPV4地址</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="ipv4"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">IPV6地址</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="ipv6" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">MAC地址</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="macdz" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">摄像机类型</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="sxjlx">
+									<option value="1">球机</option>
+									<option value="2">半球</option>
+									<option value="3">固定枪机</option>
+									<option value="4">遥控枪机</option>
+									<option value="5">卡扣枪机</option>
+									<option value="99">未知</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">摄像机功能类型</label>
+							<div class="col-sm-8">
+								<input class="form-control select-tree-input" name="mediaFormat" id="sxjgnlx" readonly />
+								<i class="select-icon fa icon-right fa-angle-down"></i>
+								<div class="select-tree-box">
+									<div class="ztree" id="mediaFormatContent"  name="mediaFormatContent"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">补光属性</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="bgsx">
+									<option value="1">无补光</option>
+									<option value="2">红外补光</option>
+									<option value="3">白光补光</option>
+									<option value="9">其他补光</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">摄像机编码格式</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="sxjbmgs">
+									<option value="1">MPEG-4</option>
+									<option value="2">H.264</option>
+									<option value="3">SVAC</option>
+									<option value="4">H.265</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="pane-box" id="content-2" style="display: none;">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">安装地址</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" name="azdz" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">经度</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="jd" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">纬度</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="wd" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">摄像机位置类型</label>
+							<div class="col-sm-8">
+								<input class="form-control select-tree-input" name="locationType" id="sxjwzlx" readonly />
+								<i class="select-icon fa icon-right fa-angle-down"></i>
+								<div class="select-tree-box">
+									<div class="ztree" id="locationTypeContent"  name="locationType"></div>
+								</div>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">监控方位</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="jkfw">
+									<option value="1">东</option>
+									<option value="2">西</option>
+									<option value="3">南</option>
+									<option value="4">北</option>
+									<option value="5">东南</option>
+									<option value="6">东北</option>
+									<option value="7">西南</option>
+									<option value="8">西北</option>
+									<option value="9">全向</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="pane-box" id="content-3" style="display: none;">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">联网属性</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="lwsx">
+									<option value="0">已联网</option>
+									<option value="1">未联网</option>
+								</select>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">所属辖区公安机关</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="ssxqgajg" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">安装时间</label>
+							<div class="col-sm-8">
+			                    <input class="form-control date form_datetime" id="azsj" name="azsj" size="16" type="text" value="" role="{required:true}">
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">管理单位</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="gldw" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">管理单位联系方式</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="gldwlxfs" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">录像保存天数</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" name="lxbcts" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">设备状态</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="sbzt">
+									<option value="1">在用</option>
+									<option value="2">维修</option>
+									<option value="3">拆除</option>
+								</select>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">所属部门/行业</label>
+							<div class="col-sm-8">
+								<input class="form-control select-tree-input" name="locationType" id="ssbmhy" readonly />
+								<i class="select-icon fa icon-right fa-angle-down"></i>
+								<div class="select-tree-box">
+									<div class="ztree" id="ssbmhyContent"  name="locationType"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>

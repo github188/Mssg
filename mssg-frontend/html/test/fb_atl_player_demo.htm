@@ -1,0 +1,294 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script
+            src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>GB视频控件功能测试网页</title>
+</head>
+<body>
+	<div style="overflow:auto;">
+    	<div id="Version"></div>
+		<div id="PlayerWindow" style="float: left; width: 400px; height: 300px;">
+        	<object id="PlayPanel1" classid="CLSID:1120C742-3990-4E20-8FF3-E98120F6214A" style="width: 100%;
+                height: 100%;">
+        	</object>
+        </div>
+		<div id="PlayerWindow" style="float: left; width: 400px; height: 300px;">
+        	<object id="PlayPanel2" classid="CLSID:1120C742-3990-4E20-8FF3-E98120F6214A" style="width: 100%;
+                height: 100%;">
+        	</object>
+
+
+
+            <!--<script type="text/javascript">-->
+
+                <!--function a123() {-->
+                    <!--$.ajax({-->
+                        <!--url: "https://localhost:8443/sysUser/test",-->
+                        <!--method: "POST",-->
+                        <!--dataType: "json",-->
+                        <!--success: function (data) {-->
+                            <!--console.log(data);-->
+                            <!--debugger;-->
+
+                        <!--},-->
+                        <!--error: function (d) {-->
+                            <!--console.log(d);-->
+                            <!--debugger;-->
+
+                        <!--}-->
+
+
+                    <!--})-->
+                <!--}-->
+
+
+            <!--</script>-->
+            <!--<input type="submit" value="Sign Out" onclick="a123();"/>-->
+        	<!---->
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        </div>
+        <table border="1">
+        <tr>
+        <td>
+           <div id="GBCFG" style="float: left; width: 400px; height: 300px;"> 
+           <li>国标配置文件:</li>
+           <li><textarea rows="16" cols="48" name="text" id="gbcfg_text" >
+--registrar sip:192.168.30.241:7100;transport=udp
+--id sip:34030000002000000602@3403000000
+--realm 3403000000
+--username 34030000002000000602
+--password 12345678
+--bound-addr 192.168.40.49 
+--local-port 5060
+--no-tcp
+--log-file=c:\\Hplayer_log.txt
+--no-cli-console
+--cli-telnet-port=4040</textarea></li>
+
+# This is a comment in the config file.
+# pjsua --config-file alice.cfg
+--registrar sip:192.168.30.165:7100;transport=udp
+#--proxy sip:192.168.30.9:5060;transport=udp
+--id sip:34030000002000000608@3403000000
+--realm 3403000000
+--username 34030000002000000608
+--password 12345678
+--bound-addr 192.168.30.165
+--local-port 7100
+--no-tcp
+--log-file=c:\\Hplayer_log.txt
+--no-cli-console
+--cli-telnet-port=4040
+
+
+
+
+
+
+
+<!--sip:deviceId@deviceId的前10位         realm：deviceId的前10位      username：deviceId     bound-addr:host   local-port:port -->
+
+            </div>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        	<div id="NvrWithoutSip" style="float: left; width: 400px; height: 300px;"> 
+        	<li>服务器视频测试  端到端</li>
+			
+			 <li><input id="atlInit" type="button" value="初始化控件" onClick="InitAtl();" /></li>
+			 <li><input id="gbsendmsg" type="button" value="查询目录" onClick="GbSendMsg(0);" /></li>
+			
+             <li>SIP地址<input id="TextSip1" type="text" size = "45" value="sip:00000000001310018787@192.168.30.241:7100" /></li>
+             <li><input id="BtnNvrRP" type="button" value="播放实时流1" onClick="BtnNvrRealPlay();" /></li>
+			 <li>起始时间：<input id="histplaytime" type="text" value="2015-03-19 09:50:00"/></li>
+			 <li>保存路径：<input id="histsavepath" type="text" value="D:\\IpncData\\NVRVideo"/>
+			    下载速度：<input id="histdlspeed" type="text" value="200" size="4"/></li>
+			 <li><div id="StreamProgress"> StreamProgress: 0</div></li>
+             <li><input id="BtnNvrHP" type="button" value="播放历史流" onClick="BtnNvrHistPlay();" /></li>
+             <li><input id="BtnNvrHPSpeed" type="button" value="设置播放历史流速度" onClick="SetNvrHistPlaySpeed();" /></li>
+             <li><input id="BtnNvrHD" type="button" value="下载历史流" onClick="BtnNvrDL();" /></li>
+			 <li><input id="BtnFullSrceen" type="button" value="全屏" onClick="BtnFullSrceen();" /></li>
+			 
+
+             </div>
+            
+        </td>
+		 <td>
+        	<div id="NvrWithoutSip" style="float: left; width: 400px; height: 300px;"> 
+        	<li>无SIP服务器视频测试  端到端</li>
+             <li>SIP地址<input id="TextSip2" type="text" size = "45" value="sip:34020000001320000010@192.168.170.101:5080" /></li>
+             <li><input id="BtnNvrRP" type="button" value="播放实时流2" onClick="BtnNvrRealPlay2();" /></li>
+			 <li>起始时间：<input id="histplaytime" type="text" value="2015-03-19 09:50:00"/></li>
+			 <li>保存路径：<input id="histsavepath" type="text" value="D:\\IpncData\\NVRVideo"/>
+			    下载速度：<input id="histdlspeed" type="text" value="200" size="4"/></li>
+			 <li><div id="StreamProgress"> StreamProgress: 0</div></li>
+             <li><input id="BtnNvrHP" type="button" value="播放历史流" onClick="BtnNvrHistPlay();" /></li>
+             <li><input id="BtnNvrHPSpeed" type="button" value="设置播放历史流速度" onClick="SetNvrHistPlaySpeed();" /></li>
+             <li><input id="BtnNvrHD" type="button" value="下载历史流" onClick="BtnNvrDL();" /></li>
+			 <li><input id="BtnFullSrceen" type="button" value="全屏" onClick="BtnFullSrceen();" /></li>
+             </div>
+            
+        </td>
+        </tr>
+        </table>
+        </div>
+	<script type="text/javascript">
+	    var AtlCtrl0 = document.getElementById("PlayPanel1");
+		var AtlCtrl2 = document.getElementById("PlayPanel2");
+        Version.innerText = AtlCtrl0.Version; 
+		alert(111);
+		alert(GetVersion());
+		function BtnOverLayer(){
+			// OverlayText(ULONG nIndex, BSTR pbszText, ULONG x,ULONG y,ULONG nColor, ULONG nFormat,ULONG nFont, ULONG nStyle, ULONG* pStatus)
+			//COLOR_BLACK,		//clBlack                        0
+			//COLOR_MAROON,		//clMaroon                       1
+			//COLOR_GREEN,		//clGreen                        2
+			//COLOR_OLIVE,		//clOlive
+			//COLOR_NAVY,			//clNavy
+			//COLOR_PURPLE,		//clPurple
+			//COLOR_TEAL,			//clTeal
+			//COLOR_GRAY,			//clGray
+			//COLOR_SILVER,		//clSilver
+			//COLOR_RED,			//clRed
+			//COLOR_LIM,			//clLime
+			//COLOR_YELLOW,		//clYellow
+			//COLOR_BLUE,			//clBlue
+			//COLOR_FUCHSIA,		//clFuchsia
+			//COLOR_AQUA,			//clAqua
+			//COLOR_LTGRAY,		//clLtGray
+			//COLOR_DKGRAY,		//clDkGray
+			//COLOR_WHITE,		//clWhite
+			
+			//nStyle 暂时无效
+			//nFormat  暂时无效
+			
+			ret = AtlCtrl0.OverlayText(1,"光华路与麒麟路交叉口东",10,20,2,0,64,0);
+		}
+		function BtnClearOverLayer(){
+			ret = AtlCtrl0.ClearAllOverlay();
+		}
+		function transdate(endTime){ 
+			var date=new Date(); 
+			date.setFullYear(endTime.substring(0,4)); 
+			date.setMonth(endTime.substring(5,7)-1); 
+			date.setDate(endTime.substring(8,10)); 
+			date.setHours(endTime.substring(11,13)); 
+			date.setMinutes(endTime.substring(14,16)); 
+			date.setSeconds(endTime.substring(17,19)); 
+			return Date.parse(date)/1000; 
+		} 
+		function BtnNvrRealPlay(){
+			var url_tmp = document.getElementById("TextSip1").value;
+		  	var sip_cfg = document.getElementById("gbcfg_text").value; //innerhtml表示标签例里东西,
+		  	//ret = AtlCtrl0.Init(sip_cfg);
+
+			var url = "sip://" + url_tmp;
+			ret = AtlCtrl0.PlayReal(url);
+		}
+		
+		function BtnNvrRealPlay2(){
+			var url_tmp = document.getElementById("TextSip2").value;
+		  	var sip_cfg = document.getElementById("gbcfg_text").value; //innerhtml表示标签例里东西,
+		  	//ret = AtlCtrl2.Init(sip_cfg);
+
+			var url = "sip://" + url_tmp;
+			ret = AtlCtrl2.PlayReal(url);
+		}
+		
+		function BtnNvrHistPlay(){
+		    var url_tmp = document.getElementById("TextSip1").value;
+		  	var sip_cfg = document.getElementById("gbcfg_text").value; //innerhtml表示标签例里东西,
+			
+			var start_time_st_str = document.getElementById("histplaytime").value;
+			var start_time_st = transdate(start_time_st_str);
+			var end_time_st = start_time_st+300;
+		
+			ret = AtlCtrl0.Init(sip_cfg);
+			var url = "sip://" + url_tmp;
+			ret = AtlCtrl0.NetVod(url,start_time_st,end_time_st);
+		}
+		function SetNvrHistPlaySpeed(){
+			var tmp = document.getElementById("histdlspeed").value;
+			AtlCtrl0.PlaySpeed=tmp;
+		}
+		function BtnNvrDL(){
+			var url_tmp = document.getElementById("TextSip1").value;
+		  	var sip_cfg = document.getElementById("gbcfg_text").value; //innerhtml表示标签例里东西,
+			
+			var start_time_st_str = document.getElementById("histplaytime").value;
+			var start_time_st = transdate(start_time_st_str);
+			var end_time_st = start_time_st+600;
+			var savepath = document.getElementById("histsavepath").value;
+			var speed = document.getElementById("histdlspeed").value;
+		
+			ret = AtlCtrl0.Init(sip_cfg);
+			var url = "sip://" + url_tmp;
+			ret = AtlCtrl0.DLVod(url,start_time_st,end_time_st,savepath,speed);
+		}
+		
+		function BtnFullSrceen(){
+			AtlCtrl0.FullScreen = 1;
+            var b = AtlCtrl0.FullScreen;
+		}
+		function BtnNvrRealPlaySip(){
+			
+		}
+		function BtnNvrHistPlaySip(){
+			
+		}
+		function BtnNvrDLSip(){
+			
+		}
+		
+		
+		function BtnExeShell(){
+			//shell 
+			// eg1: /K ping 192.168.0.6
+			// eg2: /K ping 192.168.0.6 -t
+			// eg3: /K telnet 192.168.0.6
+			// eg3: /C ping 192.168.0.6
+			var shell = document.getElementById("shellText").value;
+			AtlCtrl0.ExecuteShellCmd(shell);
+		}
+		
+		function InitAtl(){
+			var sip_cfg = document.getElementById("gbcfg_text").value; //innerhtml表示标签例里东西,
+			ret = AtlCtrl0.Init(sip_cfg);
+		}
+		
+		function GbSendMsg(cmd){
+			var fromuri = "sip:34030000002000000602@3403000000"
+			var fromto = "sip:34020000002000000022@192.168.30.241:7100"
+			var devid = "34020000002000000022"
+			AtlCtrl0.GbSendMsg(cmd,fromuri,fromto,devid,"");
+		}
+		
+	</script>
+	<script type="text/javascript" language="javascript" for="PlayPanel" event="OnStreamProgress(nProgress, nTaskID)">
+	   StreamProgress.innerText = "Stream progress: " + nProgress;
+    </script>
+	
+	<script type="text/javascript" language="javascript" for="PlayPanel" event="OnStreamEndNotify(nNotify)">
+	  StreamProgress.innerText = "Stream progress: " + nNotify;
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,491 @@
+* {
+  font-family: arial, "微软雅黑";
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+*:focus {
+  outline: none;
+}
+img {
+  border: 0;
+}
+label {
+  font-weight: normal;
+  min-width: 70px;
+  padding-top: 3px;
+}
+label:after {
+  content: "：";
+  float: right;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.modal-header,
+.modal-footer {
+  padding: 10px 15px;
+}
+.btn {
+  padding: 5px 15px;
+}
+.form-control {
+  border-radius: 2px;
+  box-shadow: none;
+  height: 28px;
+  padding: 0 5px;
+  font-size: 12px;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+html,
+body {
+  background: #f3f4f8;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.ui-container,
+.ui-header,
+.ui-body,
+.ui-aside,
+.ui-footer,
+.ui-article,
+.ui-searchbar,
+.ui-content,
+.ui-aside,
+.ui-grid-buttonbar,
+.ui-gridbar {
+  position: absolute;
+  z-index: 10;
+}
+.ui-menu,
+.ui-header {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+}
+.ui-container {
+  height: 100%;
+  width: 100%;
+  background: #f3f4f8;
+}
+.ui-body {
+  bottom: 0;
+  z-index: 11;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
+.ui-menubar {
+  height: 100%;
+  width: 200px;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  background: url("../../dssg-frontend-manage/images/menu_bg.jpg") no-repeat;
+  background-color: #5faddb;
+  color: #fff;
+  text-align: center;
+}
+.ui-userinfo {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #02719c;
+  font-size: 14px;
+  line-height: 45px;
+}
+.ui-userinfo > i {
+  font-size: 34px;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+.ui-menu {
+  width: 100%;
+  float: left;
+}
+.ui-header {
+  left: 200px;
+  right: 0;
+  height: 45px;
+  background: #fff;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+}
+.ui-logo {
+  float: left;
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #02719c;
+}
+.ui-logo > img {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.ui-logo-text {
+  padding-top: 22px;
+  padding-left: 10px;
+  float: left;
+}
+.ui-article {
+  top: 45px;
+  bottom: 30px;
+  right: 0;
+  left: 200px;
+  padding: 10px 10px 0px 10px;
+}
+.ui-aside {
+  top: 0;
+  bottom: 0;
+}
+.ui-aside.left {
+  width: 250px;
+  left: 0;
+  border-right: 1px solid #ddd;
+}
+.ui-aside.right {
+  right: 0;
+  left: 250px;
+}
+.ui-location {
+  float: left;
+  height: 15px;
+  color: #777;
+}
+.ui-location > div {
+  float: left;
+  padding: 0 6px;
+  line-height: 15px;
+}
+.ui-location > ul {
+  float: left;
+}
+.ui-location > ul > li {
+  float: left;
+  font-size: 12px;
+  line-height: 15px;
+}
+.ui-location > ul > li > i {
+  margin: 0 5px;
+}
+.ui-searchbar {
+  border: 1px solid #ddd;
+  background: #fff;
+  margin-bottom: 10px;
+  top: 33px;
+  left: 10px;
+  right: 10px;
+  overflow: hidden;
+  min-width: 1000px;
+}
+.ui-searchbar > .ui-searchbar-form {
+  position: absolute;
+  right: 130px;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+.ui-searchbar > .ui-searchbar-buttonbar {
+  position: absolute;
+  right: 0;
+  width: 130px;
+  display: table-cell;
+  vertical-align: bottom;
+  bottom: 10px;
+}
+.ui-searchbar > .ui-searchbar-form > .form-group {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.ui-searchbar > .ui-searchbar-form input {
+  width: 180px;
+}
+.ui-searchbar > .ui-searchbar-form select {
+  width: 180px;
+}
+.ui-content {
+  border: 1px solid #ddd;
+  background: #fff;
+  overflow: auto;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+}
+.ui-footer {
+  height: 30px;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+}
+#menubar .panel {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+}
+#menubar .panel-heading {
+  background-color: transparent;
+  padding: 0;
+  height: 40px;
+}
+#menubar .panel-heading > h4 {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+#menubar .panel-heading > h4 > a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+#menubar .panel-heading > h4 > a > i:first-child {
+  margin-right: 5px;
+}
+#menubar .panel-heading > h4 > a > i:last-child {
+  float: right;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+#menubar .panel-body {
+  border-top: 1px solid #02719c;
+  border-bottom: 1px solid #02719c;
+  background: #015076;
+  padding: 0;
+}
+#menubar .panel-body > ul > li {
+  padding: 12px 10px;
+  font-size: 13px;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+  transition: all 200ms linear 0s;
+}
+#menubar .panel-body > ul > .active,
+#menubar .panel-body > ul > li:hover {
+  background: #013c58;
+  border-left: 4px solid #04ccff;
+  color: #04ccff;
+}
+#menubar .panel-title {
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+#menubar .panel-title:hover {
+  color: #04ccff;
+}
+#menubar .panel-title > a {
+  letter-spacing: 0.5px;
+}
+.ui-linkbar {
+  float: right;
+  margin-right: 5px;
+}
+.ui-searchInput {
+  border: 1px solid #ddd;
+  height: 26px;
+  width: 200px;
+  float: left;
+  border-radius: 4px;
+}
+.ui-searchInput > input {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  width: 175px;
+  font-size: 13px;
+  height: 100%;
+  padding: 4px;
+}
+.ui-searchInput > i {
+  float: right;
+  font-size: 13px;
+  color: #aaa;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.ui-linkbar > ul {
+  float: left;
+  margin-top: 10px;
+  height: 26px;
+}
+.ui-linkbar > ul > li {
+  float: left;
+  color: #aaa;
+  font-size: 13px;
+  border-right: 1px solid #eee;
+  padding: 0 15px;
+  height: 100%;
+}
+.ui-linkbar > ul > li > a {
+  color: #aaa;
+  margin-top: 4px;
+  float: left;
+}
+.ui-linkbar > ul > li > a:hover {
+  color: #039ae6;
+}
+.ui-linkbar > ul > li > a > i {
+  margin-right: 5px;
+  font-size: 16px;
+  text-shadow: none;
+}
+.ui-gridbar {
+  top: 40px;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+  padding: 5px;
+}
+.ui-grid-buttonbar {
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+  width: 100%;
+}
+.ui-grid-buttonbar > .ui-grid-buttonGroup.left {
+  float: left;
+}
+.ui-grid-buttonbar > .ui-grid-buttonGroup.right {
+  float: right;
+}
+.ui-grid-buttonbar > .ui-grid-buttonGroup > li {
+  float: left;
+  padding: 4px 5px;
+}
+.ui-grid-buttonbar > .ui-grid-buttonGroup > li > button > i {
+  margin-right: 2px;
+}
+.ui-grid {
+  border: 1px solid #ddd;
+}
+.ui-grid > thead th {
+  background: #00a7ed;
+  border-bottom: transparent;
+  color: #fff;
+  text-align: center;
+}
+.ui-grid > tbody td {
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+.btn-link {
+  color: #333;
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: none;
+  color: #039ae6;
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: hidden;
+}
+.btn-link.disabled,
+.btn-link.disabled:hover {
+  color: #aaa;
+}
+.modal-body {
+  padding: 5px;
+}
+.ui-form {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.ui-form > .form-group {
+  float: left;
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+.ui-form > .form-group > .ui-form-inputGroup,
+.ui-form > .form-group > .ui-form-crGroup {
+  float: left;
+  min-height: 50px;
+}
+.ui-form > .form-group > .ui-form-crGroup {
+  padding-top: 7px;
+}
+.ui-form > .form-group > .ui-form-crGroup input[type="checkbox"],
+.ui-form > .form-group > .ui-form-crGroup input[type="radio"] {
+  margin: 0 3px 0 15px;
+}
+.ui-form > .form-group > span.required:after {
+  content: "*";
+  color: red;
+  padding: 10px 0 0 10px;
+  float: left;
+  font-size: 16px;
+}
+.ui-form > .form-group > label {
+  min-width: 70px;
+  float: left;
+  font-size: 14px;
+  color: #333;
+}
+.ui-form > .form-group input[type="text"],
+.ui-form > .form-group select {
+  float: left;
+  width: 250px;
+}
+.ui-form > .form-group textarea {
+  float: left;
+  min-width: 250px;
+  width: auto;
+  min-height: 100px;
+}
+.ui-form-error {
+  clear: both;
+  font-size: 12px;
+  color: red;
+  position: relative;
+  bottom: 0;
+  padding: 5px;
+}
+.ui-treebar {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+/*# sourceMappingURL=style.css.map */
+#layui-laydate1{
+  top:300px !important;
+}

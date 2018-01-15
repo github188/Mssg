@@ -1,0 +1,43 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"name": "一类视频监控点",
+			"children": [
+			]
+		},
+		{
+			"id": "2",
+			"name": "二类视频监控点",
+			"children": [
+			]
+		},
+		{
+			"id": "3",
+			"name": "三类视频监控点",
+			"children": [
+			]
+		},
+		{
+			"id": "4",
+			"name": "公安内部视频监控点",
+			"children": [
+			]
+		},
+		{
+			"id": "9",
+			"name": "其他点位",
+			"children": [
+			]
+		},
+		{
+			"id": "-1",
+			"name": "与等级无关",
+			"children": [
+			]
+		}
+	]
+}

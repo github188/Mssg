@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mssg-parent</artifactId>
+        <groupId>com.fable.mssg</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../mssg-parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>MSSG Commons</name>
+    <description>MSSG Commons</description>
+    <artifactId>mssg-commons</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>mssg-api</module>
+    </modules>
+</project>

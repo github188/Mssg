@@ -1,0 +1,55 @@
+<div class="content-padding-box">
+    <div class="row-fluid clearfix" data-example-id="togglable-tabs">
+        <ul id="personCenterTabs" class="col-md-3 nav nav-left-layout" role="tablist" style="padding-right: 0;">
+            <li role="presentation" class="active">
+                <a href="#editPwd" id="editPwd-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">修改密码</a>
+            </li>
+            <!--<li role="presentation" class="">-->
+            <!--<a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Profile</a>-->
+            <!--</li>-->
+        </ul>
+        <div id="personCenterContent" class="col-md-9 tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="editPwd" aria-labelledby="editPwd-tab">
+                <!--<form class="form-horizontal" id="form" style="border: 0;">-->
+                    <div class="row-fluid clearfix">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">旧密码</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" name="oldPwd" value="" role="{required:true}">
+                                </div>
+                                <span class="asterisk"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">新密码</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" name="newPwd" role="{required:true}">
+                                </div>
+                                <span class="asterisk"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">确认密码</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" name="reNewPwd" role="{required:true}">
+                                </div>
+                                <span class="asterisk"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-primary" id="btnEditPwd">确定</button>
+                        </div>
+                    </div>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    require(["app/personCenter/personCenterApp"],function(app){
+        app.run();
+    });
+</script>

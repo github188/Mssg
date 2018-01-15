@@ -1,0 +1,154 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id":"0",
+			"name":"全部",
+			"pid":null,
+			"children": [
+				{
+					"id": "1",
+					"name": "省际检查站",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "2",
+					"name": "党政机关",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "3",
+					"name": "车站码头",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "4",
+					"name": "中心广场",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "5",
+					"name": "体育场馆",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "6",
+					"name": "商业中心",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "7",
+					"name": "宗教场所",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "8",
+					"name": "校园周边",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "9",
+					"name": "治安复杂区域",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "10",
+					"name": "交通干线",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "11",
+					"name": "医院周边",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "12",
+					"name": "金融机构周边",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "13",
+					"name": "危险物品场所周边",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "14",
+					"name": "博物馆展览馆",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "15",
+					"name": "重点水域、航道",
+					"children": [
+					]
+				},
+				{
+					"id": "96",
+					"name": "市际公安检查站",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "97",
+					"name": "涉外场所",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "98",
+					"name": "边境沿线",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "99",
+					"name": "旅游景区",
+					"pid":"0",
+					"children": [
+					]
+				},
+				{
+					"id": "9",
+					"name": "其他点位",
+					"pid":"0",
+					"children": [
+					]
+				}
+			]
+		}
+
+	]
+}

@@ -1,0 +1,115 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"name": "公安机关",
+			"children": [
+			]
+		},
+		{
+			"id": "2",
+			"name": "环保部门",
+			"children": [
+			]
+		},
+		{
+			"id": "3",
+			"name": "文博部门",
+			"children": [
+			]
+		},
+		{
+			"id": "4",
+			"name": "医疗部门",
+			"children": [
+			]
+		},
+		{
+			"id": "5",
+			"name": "旅游管理",
+			"children": [
+			]
+		},
+		{
+			"id": "6",
+			"name": "新闻广电",
+			"children": [
+			]
+		},
+		{
+			"id": "7",
+			"name": "食品医药监督管理部门",
+			"children": [
+			]
+		},
+		{
+			"id": "8",
+			"name": "教育管理部门",
+			"children": [
+			]
+		},
+		{
+			"id": "9",
+			"name": "检察院",
+			"children": [
+			]
+		},
+		{
+			"id": "10",
+			"name": "法院",
+			"children": [
+			]
+		},
+		{
+			"id": "11",
+			"name": "金融部门",
+			"children": [
+			]
+		},
+		{
+			"id": "12",
+			"name": "交通部门",
+			"children": [
+			]
+		},
+		{
+			"id": "13",
+			"name": "住房和城乡建设部门",
+			"children": [
+			]
+		},
+		{
+			"id": "14",
+			"name": "水利部门",
+			"children": [
+			]
+		},
+		{
+			"id": "15",
+			"name": "林业部门",
+			"children": [
+			]
+		},
+		{
+			"id": "16",
+			"name": "安全生产监督部门",
+			"children": [
+			]
+		},
+		{
+			"id": "17",
+			"name": "市政市容委",
+			"children": [
+			]
+		},
+		{
+			"id": "18",
+			"name": "国土局",
+			"children": [
+			]
+		}
+	]
+}

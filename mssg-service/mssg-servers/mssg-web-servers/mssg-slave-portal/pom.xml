@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mssg-web-servers</artifactId>
+        <groupId>com.fable.mssg</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>MSSG Slave Portal</name>
+    <description>MSSG Slave Portal</description>
+    <artifactId>mssg-slave-portal</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <main.basedir>${basedir}/..</main.basedir>
+        <start-class>com.fable.mssg.slave.Application</start-class>
+    </properties>
+
+    <dependencies>
+    	<dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fable.framework</groupId>
+            <artifactId>fable-proxy</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fable.framework</groupId>
+            <artifactId>fable-web</artifactId>
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+                <!--</exclusion>-->
+                <!--<exclusion>-->
+                    <!--<groupId>com.slyak</groupId>-->
+                    <!--<artifactId>spring-boot-starter-jpa-extra</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        </dependency>
+
+        <dependency>
+            <groupId>com.fable.mssg</groupId>
+            <artifactId>mssg-resource</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.fusesource</groupId>
+            <artifactId>sigar</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

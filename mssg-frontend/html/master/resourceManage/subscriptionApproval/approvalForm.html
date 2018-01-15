@@ -1,0 +1,235 @@
+<style>
+	/*#mCSB_5_container{*/
+		/*position: inherit !important;*/
+	/*}*/
+</style>
+<div class="row-fluid clearfix">
+	<ul class="step-list clearfix">
+		<li class="active">
+			<span>请求方信息</span>
+			<div class="wrap">
+				<div class="circle-box">1</div>
+			</div>
+		</li>
+		<li>
+			<span>元数据信息</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">2</div>
+			</div>
+		</li>
+		<li>
+			<span>请求权限处理</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">3</div>
+			</div>
+		</li>
+		<li>
+			<span>填写审批意见</span>
+			<div class="wrap">
+				<div class="bar-box"></div>
+				<div class="circle-box">4</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="row-fluid clearfix">
+	<div class="panes-content">
+		<div class="pane-box" id="content-1">
+			<table class="table table-bordered table-info">
+				<tr>
+					<td>申请单位</td>
+					<td name="createCompany"></td>
+					<td>申请订阅时间</td>
+					<td name="applyTime"></td>
+				</tr>
+				<tr>
+					<td>联系人</td>
+					<td name="linkMan"></td>
+					<td>职务</td>
+					<td name="position"></td>
+				</tr>
+				<tr>
+					<td>申请原因</td>
+					<td name="applyCase"></td>
+					<td>单位申请资料</td>
+					<td><a href="" name="applyDocPath" id="applyDocPath"></a></td>
+				</tr>
+				<tr>
+					<td>办公电话</td>
+					<td name="cellphoneNo"></td>
+					<td>手机</td>
+					<td name="telphone"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="pane-box" id="content-2" style="display: none;">
+			<div class="row-fluid clearfix">
+				<div class="col-md-3">
+					<div class="pane-box" style="position: relative">
+						<div class="pane-header">
+							<span>设备列表</span>
+						</div>
+						<div class="media" style="padding: 0;">
+							<div class="media-body" id="treeBox">
+								<div class="ztree" id="resouceTree"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="pane-box">
+						<div class="pane-header">
+							<span>元数据信息</span>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" data-src="holder.js/96x96" src="../../images/tianhetan.jpg" data-holder-rendered="true" style="width: 96px; height: 96px;">
+							</div>
+							<div class="media-body" id="dataInfo">
+								<h4 class="media-heading" name="resName"></h4>
+								<span name="resAbstract"></span>
+								<table class="table table-bordered table-info">
+									<tr>
+										<td>资源编码</td>
+										<td name="resCode"></td>
+										<td>资源英文名称</td>
+										<td name="englishName"></td>
+									</tr>
+									<tr>
+										<td>资源类型</td>
+										<td name="resType"></td>
+										<td>资源等级</td>
+										<td name="resLevel"></td>
+									</tr>
+									<tr>
+										<td>主题分类</td>
+										<td name="resMain"></td>
+										<td>行业分类</td>
+										<td name="resIndustry"></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="pane-box" id="content-3" style="display: none;">
+			<div class="col-md-4" style="overflow:hidden;padding:0">
+				<div>
+					<div  id="treeBox1">
+						<div class="ztree" id="resouceTreeCheck"></div>
+					</div>
+				</div>
+
+			</div>
+			<form id="form" class="col-md-8" style="border-left:1px solid #aaa">
+				<div class="row-fluid auth-box clearfix">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">实时（观看）</label>
+							<div class="col-sm-9" style="position: relative">
+								<div style="position: absolute;width:100%;max-width: 416px">
+									<input  name="realDays" class="tempValue form-control" style="border:1px solid #fff;visibility:hidden" role="{required:true}">
+								</div>
+						      <select class="form-control" id="realDays" style="background:rgba(0,0,0,0);position:relative;z-index:99" >
+						      	<option value="1">1天</option>
+						      	<option value="2">最近一周</option>
+						      	<option value="3">一个月</option>
+						      	<option value="0">任意时间</option>
+						      	<option id="dateOption">时间段</option>
+						      </select>
+								<input type="text" id="date" style="position: absolute;height: 1px;border:1px solid #fff">
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">实时（操作）</label>
+							<div class="col-sm-9">
+								<div class="form-group">
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option1" name="realControl">控制
+								    </label>
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option2" name="record">录像
+								    </label>
+								    <label class="checkbox-inline">
+								    <input type="checkbox"  value="option3" name="realSnap">截图
+								    </label>
+								</div>
+							</div>
+							<!--<span class="asterisk"></span>-->
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">历史（观看）</label>
+							<div class="col-sm-9" style="position:relative;">
+								<div style="position: absolute;width:100%;max-width: 416px">
+									<input  name="histDays" class="tempValue1 form-control" style="border:1px solid #fff;visibility:hidden" role="{required:true}">
+								</div>
+							      <select class="form-control" id="histDays" style="background:rgba(0,0,0,0);position:relative;z-index:99" >
+							      	<option value="1">1天</option>
+							      	<option value="2">最近一周</option>
+							      	<option value="3">一个月</option>
+							      	<option value="0">任意时间</option>
+									 <option id="dateOption1">时间段</option>
+							      </select>
+									<input id="date1" style="position: absolute;height: 1px;border:1px solid #fff">
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">历史（操作）</label>
+							<div class="col-sm-9">
+								  <div class="form-group">
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option1" name="download">下载
+								    </label>
+								    <label class="checkbox-inline">
+								      <input type="checkbox"  value="option2" name="histSnap">截图
+								    </label>
+								  </div>
+							</div>
+							<!--<span class="asterisk"></span>-->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="pane-box" id="content-4" style="display: none;">
+			<form class="form-horizontal">
+				<div class="row-fluid clearfix">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">审批结果</label>
+							<div class="col-sm-8">
+								<select type="text" class="form-control" name="approvalResult" role="{required:true}">
+									<option value="0">同意订阅</option>
+									<option value="1">拒绝订阅</option>
+								</select>
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">审批意见</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id='approvalAdvice' name="approvalAdvice" role="{required:true}" />
+							</div>
+							<span class="asterisk"></span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,120 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"ds_name": "玄武湖",
+			"ds_code": "",
+			"media_id": null,
+			"children": [
+				{
+					"id": "2",
+					"ds_name": "东区",
+					"ds_code": "",
+					"media_id": null,
+					"children": [
+						{
+							"id": "6",
+							"ds_name": "公安MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "7",
+							"ds_name": "检察院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "8",
+							"ds_name": "法院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}
+					]
+				}, {
+					"id": "3",
+					"ds_name": "西区",
+					"ds_code": "",
+					"media_id": null,
+					"children": [
+						{
+							"id": "9",
+							"ds_name": "公安MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "10",
+							"ds_name": "检察院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "11",
+							"ds_name": "法院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}
+					]
+				}, {
+					"id": "4",
+					"ds_name": "南区",
+					"ds_code": "",
+					"media_id": null,
+					"children": [
+						{
+							"id": "12",
+							"ds_name": "公安MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "13",
+							"ds_name": "检察院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "14",
+							"ds_name": "法院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}
+					]
+				}, {
+					"id": "5",
+					"ds_name": "北区",
+					"ds_code": "",
+					"media_id": null,
+					"children": [
+						{
+							"id": "15",
+							"ds_name": "公安MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "16",
+							"ds_name": "检察院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}, {
+							"id": "17",
+							"ds_name": "法院MSSG",
+							"ds_code": "",
+							"media_id": null,
+							"children": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

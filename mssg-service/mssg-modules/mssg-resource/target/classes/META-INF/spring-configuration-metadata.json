@@ -1,0 +1,33 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.fable.mssg.config.CommonConfigProperties",
+      "name": "com.fable.mssg.resource",
+      "type": "com.fable.mssg.config.CommonConfigProperties"
+    },
+    {
+      "sourceType": "com.fable.mssg.config.CommonConfigProperties",
+      "name": "com.fable.mssg.resource.master",
+      "type": "com.fable.mssg.config.CommonConfigProperties$Master"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.fable.mssg.config.CommonConfigProperties$Master",
+      "name": "com.fable.mssg.resource.master.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fable.mssg.config.CommonConfigProperties$Master",
+      "defaultValue": 0,
+      "name": "com.fable.mssg.resource.master.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.fable.mssg.config.CommonConfigProperties$Master",
+      "name": "com.fable.mssg.resource.master.user",
+      "type": "java.lang.String"
+    }
+  ]
+}

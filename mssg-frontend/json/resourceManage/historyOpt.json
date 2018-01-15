@@ -1,0 +1,25 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"deviceId": "1",
+			"mediaName": "历史操作",
+			"children": [
+				{
+					"deviceId": "1",
+					"mediaName": "下载",
+					"children": [
+					]
+				},
+				{
+					"deviceId": "2",
+					"mediaName": "截图",
+					"children": [
+					]
+				}
+			]
+		}
+	]
+}

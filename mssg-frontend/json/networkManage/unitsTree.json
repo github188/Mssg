@@ -1,0 +1,43 @@
+{
+	"success": true,
+	"code": "0",
+	"message": "success",
+	"data": [
+		{
+			"id": "1",
+			"name": "江苏省公安厅",
+			"children": [
+				{
+					"id": "2",
+					"name": "技侦总队",
+					"children": [
+						{
+							"id": "6",
+							"name": "南京市技侦支队",
+							"children": null
+						}
+					]
+				}, {
+					"id": "3",
+					"name": "交巡警总队",
+					"children": [
+						{
+							"id": "8",
+							"name": "南京市交巡警支队",
+							"children": null
+						}
+					]
+				}, {
+					"id": "4",
+					"name": "网安总队",
+					"ds_code": "",
+					"children":null
+				}, {
+					"id": "5",
+					"name": "刑侦总队",
+					"children": null
+				}
+			]
+		}
+	]
+}
